@@ -30,7 +30,7 @@
 
 
 .buscador {
-    margin-top: 30px;
+    margin-top: 27px;
     margin-left: 80px;
     margin-right: 20px;
 }
@@ -43,23 +43,23 @@
 }
 
 
-.alineopc input[type="text"]{
+.buscador input[type="text"]{
 
     border: none;
     height: 30px;
     width: auto;
-    border-radius: 8px;
+    border-radius: 9px;
 
 
 }
 
 .buscador button{
-    height: 28px;
+    height: 32px;
     width: 80px;
     font-weight: bold;
     color: white;
     border: 2px solid white;
-    border-radius: 8px;
+    border-radius: 9px;
     margin-left: 8px;
     
 }
