@@ -1,0 +1,26 @@
+
+.section{
+    background-image: url(/src/assets/img/uaafondo.jpg);
+    background-size: cover;
+}
+h1{
+    text-align: center; /* Centra el texto horizontalmente */
+  margin-bottom: 20px;
+  size: 20px;
+  
+}
+.column.is-half-tablet.is-one-quarter-desktop{
+    background-color: rgba(0, 0, 0, 0.25);
+}
+.card{
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.subtitle.is-size-7{
+    color: yellow;
+}
+.iconos{
+    color: black; /* Color negro para los iconos */
+  margin-right: 10px /* Ajusta este valor según el espacio que desees */
+  }
+

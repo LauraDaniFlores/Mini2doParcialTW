@@ -1,0 +1,73 @@
+{
+  "hash": "e44ca432",
+  "configHash": "28d8f797",
+  "lockfileHash": "c7692d9c",
+  "browserHash": "f0592b1f",
+  "optimized": {
+    "@angular/core": {
+      "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "27328805",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "a9582f5b",
+      "needsInterop": false
+    },
+    "@angular/platform-browser/animations": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/animations.mjs",
+      "file": "@angular_platform-browser_animations.js",
+      "fileHash": "7afd9fba",
+      "needsInterop": false
+    },
+    "@angular/platform-browser/animations/async": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/animations/async.mjs",
+      "file": "@angular_platform-browser_animations_async.js",
+      "fileHash": "9d137080",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "b313d17f",
+      "needsInterop": false
+    },
+    "primeng/calendar": {
+      "src": "../../../../../node_modules/primeng/fesm2022/primeng-calendar.mjs",
+      "file": "primeng_calendar.js",
+      "fileHash": "24f6f875",
+      "needsInterop": false
+    },
+    "primeng/colorpicker": {
+      "src": "../../../../../node_modules/primeng/fesm2022/primeng-colorpicker.mjs",
+      "file": "primeng_colorpicker.js",
+      "fileHash": "61a3e058",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-62ZCTN2N": {
+      "file": "chunk-62ZCTN2N.js"
+    },
+    "chunk-VA5NPCAW": {
+      "file": "chunk-VA5NPCAW.js"
+    },
+    "browser-BA766MQP": {
+      "file": "browser-BA766MQP.js"
+    },
+    "chunk-KGTEAMHC": {
+      "file": "chunk-KGTEAMHC.js"
+    },
+    "chunk-O5JXKNHB": {
+      "file": "chunk-O5JXKNHB.js"
+    },
+    "chunk-E3NKHCHY": {
+      "file": "chunk-E3NKHCHY.js"
+    },
+    "chunk-XHMXEJF3": {
+      "file": "chunk-XHMXEJF3.js"
+    }
+  }
+}
