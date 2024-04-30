@@ -6,4 +6,5 @@ export interface Casa {
     descripcion: string;
     lugar:string;
     precio: number;
+    anfitrion: string;
 }
