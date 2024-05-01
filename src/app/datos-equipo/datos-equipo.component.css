@@ -1,16 +1,18 @@
 
-.section{
-    background-image: url(/src/assets/img/uaafondo.jpg);
-    background-size: cover;
+.fondo{
+    background-image: url('/src/assets/img/uaafondo.jpg');
+  background-size: cover; /* ajusta la imagen al tamaño del contenedor */
+  background-repeat: no-repeat; /* para que no se repita la imagen */
+  background-color: #033D1E;
 }
 h1{
     text-align: center; /* Centra el texto horizontalmente */
-  margin-bottom: 20px;
+  margin-bottom: 20px;  
   size: 20px;
   
 }
 .column.is-half-tablet.is-one-quarter-desktop{
-    background-color: rgba(0, 0, 0, 0.25);
+    background-color: rgba(0, 0, 0, 0.01);
 }
 .card{
     background-color: rgba(0, 0, 0, 0.05);
@@ -18,9 +20,21 @@ h1{
 
 .subtitle.is-size-7{
     color: yellow;
+    
 }
 .iconos{
     color: black; /* Color negro para los iconos */
   margin-right: 10px /* Ajusta este valor según el espacio que desees */
   }
 
+  .card.horizontal-card{
+    background-color: rgba(0, 0, 0, .01);
+}
+
+.title.is-size-6, .is-size-7,.content{
+    color: white;
+}
+.container{
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
