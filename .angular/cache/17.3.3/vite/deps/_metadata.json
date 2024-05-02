@@ -1,4 +1,5 @@
 {
+
   "hash": "86290f0f",
   "configHash": "7c6d92a2",
   "lockfileHash": "a4f035ab",
@@ -19,6 +20,7 @@
     "@angular/router": {
       "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
       "file": "@angular_router.js",
+      "fileHash": "eefa650b",
       "fileHash": "b38e5f20",
       "needsInterop": false
     },

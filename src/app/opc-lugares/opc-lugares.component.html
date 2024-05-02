@@ -1,0 +1,31 @@
+<div class=" cards container">
+    @for (c of lugares; track c) {
+    <div class="card">
+        <div class="card-image">
+          <figure class="image ">
+            <img
+              src="{{c.imagen[0]}}"
+              alt="Placeholder image"
+            />
+          </figure>
+        </div>
+        <div class="card-content">
+            <div class="media-content">
+                <div class="star">
+                    <p class="title is-6">{{c.lugar[0]}}, {{c.lugar[1]}}</p>
+                    <div class="estrella">                    
+                        <p>{{c.calificacion}}</p>
+                        <i class="fa-solid fa-star fa-sm" style="color: #000000;"></i>
+                    </div>
+                </div>
+              <p class="subtitle anfitrion"><span class="negritas">Anfitrión:</span> {{c.anfitrion}}</p>
+              <p class="subtitle nombre">{{c.direccion}}</p>
+          </div>
+          <hr>
+          <div class="content">
+            <span class="negritas">Precio: </span>${{c.precio}} MX
+          </div>
+        </div>
+      </div>
+    }  
+</div>
