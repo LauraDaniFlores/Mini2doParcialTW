@@ -4,7 +4,8 @@ export interface Casa {
     direccion: string;
     calificacion: number;
     descripcion: string;
-    lugar:string;
+    lugar:string[];
     precio: number;
     anfitrion: string;
+    ofrece: string[]
 }
