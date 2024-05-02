@@ -1,6 +1,6 @@
 
 .fondo{
-    background-image: url('/src/assets/img/uaafondo.jpg');
+    background-image: url('../../assets/img/uaafondo.jpg');
   background-size: cover; /* ajusta la imagen al tamaño del contenedor */
   background-repeat: no-repeat; /* para que no se repita la imagen */
   background-color: #033D1E;
@@ -9,6 +9,10 @@ h1{
     text-align: center; /* Centra el texto horizontalmente */
   margin-bottom: 20px;  
   size: 20px;
+  color: aliceblue;
+  font-weight: bold;
+  font-size: 40px;
+  
   
 }
 .column.is-half-tablet.is-one-quarter-desktop{
