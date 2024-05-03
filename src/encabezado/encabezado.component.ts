@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-encabezado',
@@ -8,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './encabezado.component.css'
 })
 export class EncabezadoComponent {
+  showBurgerMenu: boolean | undefined;
+    constructor() {}
+
+
 
 }

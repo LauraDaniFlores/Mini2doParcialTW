@@ -1,0 +1,303 @@
+/* Poner la imagen estatica */
+.contenidocom {
+    background-color: white;
+    height: auto;
+}
+
+
+
+.contenedor {
+    color: white;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: none;
+    margin-right: none;
+    margin-left: none;
+
+}
+
+.contenedor2 {
+    color: white;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: none;
+    margin-right: none;
+    margin-left: none;
+
+    margin-top: 50px;
+
+}
+
+.contenedor-table {
+    color: white;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: none;
+    margin-right: none;
+    margin-left: none;
+
+}
+
+.contenedor-table img{
+    border-radius: 8px;
+    
+}
+
+.segcontenido td:hover{
+    scale: 1.1;
+    transition-duration: 1s;
+
+}
+
+
+
+
+
+.centrado {
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.749);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    margin: none;
+}
+
+.centrado2 {
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.749);
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-40%, -40%);
+
+    width: 560px;
+    height: 340px;
+
+    margin: none;
+}
+
+
+.context-enc {
+    margin: 60px;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 70px;
+    font-size: 17.5px;
+}
+
+.context-sub {
+    margin-top: 40px;
+    font-size: 13px;
+}
+
+.context-ref {
+    margin-top: 40px;
+    font-size: 9px;
+}
+
+
+
+.segcontenido {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 50px;
+
+}
+
+.tercontenido {
+
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 50px;
+
+
+}
+
+.centradot {
+    width: 320px;
+    height: 230px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.749);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+
+.redimension-table {
+    width: 420px;
+    height: 622px;
+
+
+
+    /* border: 2px solid black; */
+    border-radius: 8px;
+
+
+
+}
+
+.titulo {
+    text-align: center;
+    color: black;
+
+    font-size: x-large;
+
+    margin-top: 150px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.contexto {
+    text-align: justify;
+    color: black;
+
+    font-size: medium;
+
+    font-weight: bold;
+
+    margin-top: 100px;
+    margin: 25px;
+}
+
+.context-enctt {
+    margin: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.context-subtt {
+    margin-top: 30px;
+    font-size: 9px;
+}
+
+
+.context-enct {
+    margin: 25px;
+    margin-top: 75px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 17px;
+}
+
+.context-subt {
+    margin-top: 30px;
+    font-size: 9px;
+}
+
+.linea hr {
+    display: grid;
+    justify-content: center;
+    border: 2px solid white;
+    width: 124px;
+}
+
+.context-subt3 {
+    margin-top: 30px;
+    margin: 50px;
+    font-size: 15px;
+}
+
+.context-ref2 {
+    margin-top: 40px;
+    margin: 40px;
+    font-size: 8px;
+}
+
+/* Posicion del boton de generar cita */
+.posboton{
+    display: grid;
+    justify-content: center;    
+}
+
+
+/* Diseño de boton */
+.btn-shape {
+    transition: all .3s linear;
+    width: 168px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    outline: none;
+    background-color: #020202;
+    border-radius: 10px;
+    border: 0px;
+    position: relative;
+    z-index: 99;
+    cursor: pointer;
+  }
+  
+  .btn-shape::after,
+  .btn-shape::before {
+    content: '';
+    position: absolute;
+    background-color: #020202;
+    width: 100%;
+    opacity: 0;
+    height: 100%;
+    left: 0;
+    border-radius: 100px;
+    bottom: 0;
+    z-index: -2;
+    transition: all .3s linear;
+  }
+  
+  .btn-shape span {
+    font-size: 9px;
+    font-weight: 500;
+    transition: all .3s linear;
+    color: #fff;
+    text-transform: capitalize;
+  }
+  
+  .btn-shape:hover {
+    transform: translate(-12px, -12px);
+  }
+  
+  .btn-shape:hover:after {
+    transform: translate(6px, 6px);
+    opacity: .5;
+  }
+  
+  .btn-shape:hover::before {
+    transform: translate(12px, 12px);
+    opacity: .3;
+  }
+  
+  .btn-shape:hover span {
+    animation: storm .4s linear both;
+  }
+  
+  @keyframes storm {
+    0% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  
+    25% {
+      transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+  
+    50% {
+      transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+  
+    75% {
+      transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+  
+    100% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  }
