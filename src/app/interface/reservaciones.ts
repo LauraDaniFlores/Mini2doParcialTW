@@ -8,4 +8,6 @@ export interface Reservacion{
     telefono: string;
     correo: EmailValidator;
     precio: number;
+    idR: number; 
+    idCasa: number; 
 }
