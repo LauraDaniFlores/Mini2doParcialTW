@@ -8,18 +8,23 @@ import { EncabezadoComponent } from "../encabezado/encabezado.component";
 import { ReservacionesComponent } from "./reservaciones/reservaciones.component";
 import { DatosEquipoComponent } from "./datos-equipo/datos-equipo.component";
 import { AcercaNosotrosComponent } from './acerca-nosotros/acerca-nosotros.component';
+import { MenuPrincipalComponent } from "../menu-principal/menu-principal.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, OpcLugaresComponent, FooterComponent, EncabezadoComponent, ReservacionesComponent, AcercaNosotrosComponent, DatosEquipoComponent]
+    imports: [RouterOutlet, OpcLugaresComponent, FooterComponent, EncabezadoComponent, ReservacionesComponent, AcercaNosotrosComponent, DatosEquipoComponent, MenuPrincipalComponent]
 })
 
 export class AppComponent {
   title = 'KingAGS';
 
   color:string = '#fff'; 
+
+  
+
+  
 }
 

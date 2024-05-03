@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { take } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
-
+ 
 @Injectable({
   providedIn: 'root'
 })
