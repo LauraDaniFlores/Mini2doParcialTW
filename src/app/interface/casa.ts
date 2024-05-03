@@ -8,4 +8,5 @@ export interface Casa {
     precio: number;
     anfitrion: string;
     ofrece: string[]
+    id: number; 
 }

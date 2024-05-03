@@ -1,0 +1,74 @@
+*{
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    margin: 60px auto;
+    background-color: #282828;
+    color: white;
+    width: 400px;
+    padding: 20px;
+    font-size: 20px;
+
+}
+
+div.anteriorContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 40px;
+}
+
+div.iconp{
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    row-gap: 3px;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+div.iconp input{
+    width: 150px;
+}
+div.iconp p{
+    margin-bottom: 0;
+}
+div.estrella{
+    justify-content: left;
+}
+.image{
+    object-fit: cover;
+    width: 300px;
+    height: 300px;  
+    border-radius: 20px;
+}
+section .first{
+    width: 300px;
+}
+section .second, section .third{
+    width: 150px;
+    color: #033D1E;
+}
+section .third{
+    
+}
+.reserva{
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+    height: 450px;
+    flex-wrap:nowrap;
+}
+.titulo{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+.lugar{
+    font-size: 14px;
+}
+.dinero{
+    font-weight: bold;
+}
