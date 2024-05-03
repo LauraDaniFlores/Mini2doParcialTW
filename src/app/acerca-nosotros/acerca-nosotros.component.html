@@ -1,13 +1,21 @@
 <main>
   <section class="about-us">
-    <h1 style="font-weight: bold">Acerca de nosotros</h1>
+    <h1 style="font-weight: bold">Conoce al equipo</h1>
     <p>
       En 1984, nació el concepto de "KING AGS" cuando unos amigos decidieron
       abrir las puertas de su modesta casa en Aguascalientes para recibir a tres
-      viajeros sedientos de aventura. Desde entonces, ¡ha sido una montaña rusa
-      emocionante! Ahora, más de 10,000 anfitriones en Aguascalientes han
-      compartido sus hogares con más de 3 millones de personas, ¡y sigue
-      creciendo más rápido que un nopal en primavera!
+      viajeros sedientos de aventura. Desde entonces, más de 10,000 anfitriones
+      en Aguascalientes han compartido sus hogares con más de 3 millones de
+      personas. En KING AGS, nos enorgullece brindar a nuestros huéspedes
+      experiencias únicas y auténticas. Desde acogedoras cabañas hasta lujosas
+      casas, ofrecemos una amplia gama de opciones para satisfacer todas las
+      necesidades y presupuestos. Además, organizamos eventos locales y
+      experiencias culturales para sumergir a nuestros huéspedes en la vida de
+      Aguascalientes. Creemos en la sostenibilidad y la responsabilidad social,
+      trabajando en estrecha colaboración con nuestras comunidades locales. Con
+      un equipo dedicado, estamos comprometidos a hacer que tu experiencia en
+      KING AGS sea inolvidable. Ven y únete a nuestra comunidad de viajeros
+      apasionados y descubre todo lo que Aguascalientes tiene para ofrecer.
     </p>
   </section>
 
@@ -16,7 +24,7 @@
       <div class="columns is-centered">
         <div class="column is-one-quarter">
           <div class="card">
-            <div class="card-content">
+            <div class="card-content has-text-centered">
               <p class="title is-4">100 000</p>
               <p class="subtitle is-6">
                 Localidades con anuncios activos en KING AGS
@@ -26,7 +34,7 @@
         </div>
         <div class="column is-one-quarter">
           <div class="card">
-            <div class="card-content">
+            <div class="card-content has-text-centered">
               <p class="title is-4">Más de 1.5 millones</p>
               <p class="subtitle is-6">De llegadas en total.</p>
             </div>
@@ -34,10 +42,9 @@
         </div>
         <div class="column is-one-quarter">
           <div class="card">
-            <div class="card-content">
+            <div class="card-content has-text-centered">
               <p class="title is-4">Mas de 2 millones</p>
               <p class="subtitle is-6">De anfitriones.</p>
-              <p></p>
             </div>
           </div>
         </div>
@@ -45,16 +52,14 @@
     </div>
   </section>
 
-  <div class="container">
-
-  <iframe
-    width="560"
-    height="315"
-    [src]=" video | domseguro : 'https://www.youtube.com/embed/'"
-    frameborder="0"
-    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-inpicture"
-    allowfullscreen
-    
-  ></iframe>
-</div>
+  <div class="container" style="margin-top: 50px;">
+    <iframe
+      width="560"
+      height="315"
+      [src]="video | domseguro : 'https://www.youtube.com/embed/'"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-inpicture"
+      allowfullscreen
+    ></iframe>
+  </div>
 </main>
