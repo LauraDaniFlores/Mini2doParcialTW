@@ -35,7 +35,7 @@ export const Lugares:Casa[]=[
         ofrece: ['Wifi', 'Área para trabajar', 'Tv', 'Aire acondicionadao', 'Ascensor']
     },
     {
-        imagen: ['assets/imagenes/Casas/Aguascalientes2/Aguas1.webp','assets/imagenes/Casas/Aguascalientes2/Aguas2.webp','assets/imagenes/Casas/Aguascalientes2/Aguas3.webp', 'assets/imagenes/Casas/Aguascalientes2/Aguas4.webp','assets/imagenes/Casas/Aguascalientes2/Aguas5.webp' ],
+        imagen: ['assets/imagenes/Casas/Aguascalientes2/Aguas1.webp','assets/imagenes/Casas/Aguascalientes2/Aguas2.jpeg','assets/imagenes/Casas/Aguascalientes2/Aguas3.jpeg', 'assets/imagenes/Casas/Aguascalientes2/Aguas4.webp','assets/imagenes/Casas/Aguascalientes2/Aguas5.webp' ],
         nombre: 'Alojamiento entero',
         direccion: '2005 Av Independiente, Desarrollo Especial Galerías',
         calificacion: 4.90,
@@ -46,7 +46,7 @@ export const Lugares:Casa[]=[
         ofrece: ['Cocina', 'Wifi', 'Tv', 'Plancha', 'Horno', 'Licuadora']
     },
     {
-        imagen: ['assets/imagenes/Casas/Mazatlan/Mazatlan1.webp','assets/imagenes/Casas/Mazatlan/Mazatlan2.webp', 'assets/imagenes/Casas/Mazatlan/Mazatlan3.webp', 'assets/imagenes/Casas/Mazatlan/Mazatlan4.webp' ],
+        imagen: ['assets/imagenes/Casas/Mazatlan/Mazatlan1.webp','assets/imagenes/Casas/Mazatlan/Mazatlan2.webp', 'assets/imagenes/Casas/Mazatlan/Mazatlan3.jpeg', 'assets/imagenes/Casas/Mazatlan/Mazatlan4.jpeg' ],
         nombre: 'Alojamiento entero',
         direccion: '4724 Av. Ernesto Coppel Campaña',
         calificacion: 4.74,
@@ -79,7 +79,7 @@ export const Lugares:Casa[]=[
         ofrece: ['Wifi', 'Acceso al lago', 'Cocina', 'Tv', 'Ascensor']
     },
     {
-        imagen: ['assets/imagenes/Casas/Guanajuato/Guanajuato2.1.webp', 'src/assets/imagenes/Casas/Guanajuato/Guanajuato2.2.webp',  'src/assets/imagenes/Casas/Guanajuato/Guanajuato2.3.webp', 'src/assets/imagenes/Casas/Guanajuato/Guanajuato2.4.webp', 'src/assets/imagenes/Casas/Guanajuato/Guanajuato2.5.webp', 'src/assets/imagenes/Casas/Guanajuato/Guanajuato2.6.webp'],
+        imagen: ['assets/imagenes/Casas/Guanajuato/Guanajuato21.webp', 'src/assets/imagenes/Casas/Guanajuato/Guanajuato22.webp',  'src/assets/imagenes/Casas/Guanajuato/Guanajuato23.webp', 'src/assets/imagenes/Casas/Guanajuato/Guanajuato24.webp', 'src/assets/imagenes/Casas/Guanajuato/Guanajuato25.webp', 'src/assets/imagenes/Casas/Guanajuato/Guanajuato26.webp'],
         nombre: 'Alojamiento entero: condominio en Marfil',
         direccion: '70 Mineral de Valenciana',
         calificacion: 5.0,
@@ -91,7 +91,7 @@ export const Lugares:Casa[]=[
 
     },
     {
-        imagen: ['assets/imagenes/Casas/Colima/Colima1.webp', 'assets/imagenes/Casas/Colima/Colima2.webp', 'assets/imagenes/Casas/Colima/Colima3.webp', 'assets/imagenes/Casas/Colima/Colima4.webp'],
+        imagen: ['assets/imagenes/Casas/Colima/Colima1.webp', 'assets/imagenes/Casas/Colima/Colima2.webp', 'assets/imagenes/Casas/Colima/Colima3.webp', 'assets/imagenes/Casas/Colima/Colima4.jpeg'],
         nombre: 'Alojamiento entero',
         direccion: '195 de los Diamantes',
         calificacion: 4.84,
@@ -102,7 +102,7 @@ export const Lugares:Casa[]=[
         ofrece: ['Cocina', 'wifi', 'Tv y Netflix', 'Refrigerador']
     },
     {
-        imagen: ['assets/imagenes/Casas/Durango/Durango1.jpeg', 'assets/imagenes/Casas/Durango/Durango2.jpeg','assets/imagenes/Casas/Durango/Durango3.jpeg','assets/imagenes/Casas/Durango/Durango4.jpeg','assets/imagenes/Casas/Durango/Durango5.jpeg'],
+        imagen: ['assets/imagenes/Casas/Durango/Durango1.jpeg', 'assets/imagenes/Casas/Durango/Durango2.jpeg','assets/imagenes/Casas/Durango/Durango3.webp','assets/imagenes/Casas/Durango/Durango4.webp','assets/imagenes/Casas/Durango/Durango5.jpeg'],
         nombre: 'Alojamiento entero',
         direccion: '411 Elorreaga',
         calificacion: 4.92,
@@ -146,7 +146,7 @@ export const Lugares:Casa[]=[
         ofrece: [ 'Vista a la playa', 'Lavadora', 'Wifi', 'Tv', 'Lavadora', 'Refrigerador']
     },
     {
-        imagen: ['assets/imagenes/Casas/Visalia/Visalia.webp', 'assets/imagenes/Casas/Visalia/Visalia1.webp', 'assets/imagenes/Casas/Visalia/Visalia2.webp', 'assets/imagenes/Casas/Visalia/Visalia.webp3', 'assets/imagenes/Casas/Visalia/Visalia.webp4', 'assets/imagenes/Casas/Visalia/Visalia.webp5'],
+        imagen: ['assets/imagenes/Casas/Visalia/Visalia.webp', 'assets/imagenes/Casas/Visalia/Visalia1.webp', 'assets/imagenes/Casas/Visalia/Visalia2.webp', 'assets/imagenes/Casas/Visalia/Visalia3.webp', 'assets/imagenes/Casas/Visalia/Visalia.webp4', 'assets/imagenes/Casas/Visalia/Visalia.webp5'],
         nombre: 'Alojamiento entero. Cerca del Parque Nacional de las Secuoyas',
         direccion: '1323 S Clover St, Visilia, CA 93277',
         calificacion: 4.98,
