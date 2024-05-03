@@ -1,42 +1,45 @@
 <h1>Reservaciones de fechas anteriores</h1>
 <div class="anteriorContainer">
-    @for(casa of listadoCasa; track casa){
+    @for(res of listadoReser; track res;){
+        @if(fechaAnterior(res.fechaI)){
         <section class="reserva">
             <section class="first">
-                <img class="image materialboxed" [src]=getImage(casa)>
-                <p class="titulo">{{casa.nombre}}</p>
-                <p class="lugar">{{casa.lugar}}</p>
+                <img class="image" [src]=lista[res.idCasa].imagen[0]>
+                <p class="titulo">{{lista[res.idCasa].nombre}}</p>
+                <p class="lugar">{{lista[res.idCasa].lugar}}</p>
                 <div class="estrella iconp">                    
-                    <p>{{casa.calificacion}}</p>
+                    <p>{{lista[res.idCasa].calificacion}}</p>
                     <i class="fa-solid fa-star fa-sm" style="color: #000000;"></i>
                 </div>
+
             </section>
             <section class="second">
                 <div class="iconp">
                     <i class="fa-solid fa-calendar-day fa-lg" style="color: #033d1e;"></i>
                     <p>Fecha inicial</p>
                     <div class="control">
-                        <input class="input" type="date" value="2024-06-01" readonly />
+                        <input class="input" type="date" value="{{res.fechaF.getFullYear()}}-{{sumarMonth(res.fechaF.getMonth())}}-{{ponerCeros(res.fechaI.getDate())}}" readonly />
                     </div>   
                 </div>
                 <div class="iconp">
                     <i class="fa-solid fa-calendar-check fa-lg" style="color: #033d1e;"></i>
                     <p>Fecha Final</p> 
                     <div class="control">
-                        <input class="input" type="date" value="2024-07-01" readonly />
+                        <input class="input" type="date" value="{{res.fechaF.getFullYear()}}-{{sumarMonth(res.fechaF.getMonth())}}-{{ponerCeros(res.fechaF.getDate())}}" readonly />
                     </div>      
                 </div>
                 <div class="iconp">
                     <i class="fa-solid fa-clock fa-lg" style="color: #033d1e;"></i>
                     <p>Hora</p>  
                     <div class="control">
-                        <input class="input" type="time" value="11:10" readonly />
+                        <input class="input" type="time" value={{res.hora}} readonly />
                     </div>    
                 </div>
                 <div class="iconp">
-                    <i class="fa-solid fa-sun fa-lg" style="color: #033d1e;"></i>                    <p>Días</p> 
+                    <i class="fa-solid fa-sun fa-lg" style="color: #033d1e;"></i>                    
+                    <p>Días</p> 
                     <div class="control">
-                        <input class="input" type="number" value="3" readonly />
+                        <input class="input" type="number" value={{res.dias}} readonly />
                     </div>   
                 </div>
             </section>
@@ -45,36 +48,112 @@
                     <i class="fa-solid fa-user fa-lg" style="color: #033d1e;"></i>
                     <p>Nombre</p> 
                     <div class="control">
-                        <input class="input" type="text" value="Laura" readonly />
+                        <input class="input" type="text" value={{res.nombre}} readonly />
                     </div>   
                 </div>
                 <div class="iconp">
                     <i class="fa-solid fa-phone" style="color: #033d1e;"></i>
                     <p>Teléfono</p>    
                     <div class="control">
-                        <input class="input" type="text" value="3461150701" readonly />
+                        <input class="input" type="text" value={{res.telefono}} readonly />
                     </div>   
                 </div>
                 <div class="iconp">
                     <i class="fa-solid fa-envelope fa-lg" style="color: #033d1e;"></i>
                     <p>Correo</p>
                     <div class="control">
-                        <input class="input" type="email" value="danila@gmail" readonly />
+                        <input class="input" type="email" value={{res.correo}} readonly />
                     </div>   
                 </div>
                 <div class="iconp">
                     <i class="fa-solid fa-money-check-dollar fa-lg" style="color: #033d1e;"></i>
                     <p>Precio Total</p>    
                     <div class="control">
-                        <input class="dinero input has-background-grey-darker has-text-light" type="text" value="$1000" readonly />
+                        <input class="dinero input has-background-grey-darker has-text-light" type="text" value="${{res.precio}}" readonly />
                     </div>  
                 </div>
             </section>
         </section>
     }
+    }
 </div>
 
 <h1>Reservaciones de fechas futuras</h1>
 <div class="futurasContainer">
-    
+    @for(res of listadoReser; track res;){
+        @if(!fechaAnterior(res.fechaI)){
+        <section class="reserva">
+            <section class="first">
+                <img class="image" [src]=lista[res.idCasa].imagen[0]>
+                <p class="titulo">{{lista[res.idCasa].nombre}}</p>
+                <p class="lugar">{{lista[res.idCasa].lugar}}</p>
+                <div class="estrella iconp">                    
+                    <p>{{lista[res.idCasa].calificacion}}</p>
+                    <i class="fa-solid fa-star fa-sm" style="color: #000000;"></i>
+                </div>
+
+            </section>
+            <section class="second">
+                <div class="iconp">
+                    <i class="fa-solid fa-calendar-day fa-lg" style="color: #033d1e;"></i>
+                    <p>Fecha inicial</p>
+                    <div class="control">
+                        <input class="input" type="date" value="{{res.fechaI.getFullYear()}}-{{sumarMonth(res.fechaI.getMonth())}}-{{ponerCeros(res.fechaI.getDate())}}" readonly />
+                    </div>   
+                </div>
+                <div class="iconp">
+                    <i class="fa-solid fa-calendar-check fa-lg" style="color: #033d1e;"></i>
+                    <p>Fecha Final</p> 
+                    <div class="control">
+                        <input class="input" type="date" value="{{res.fechaF.getFullYear()}}-{{sumarMonth(res.fechaF.getMonth())}}-{{ponerCeros(res.fechaF.getDate())}}" readonly />
+                    </div>      
+                </div>
+                <div class="iconp">
+                    <i class="fa-solid fa-clock fa-lg" style="color: #033d1e;"></i>
+                    <p>Hora</p>  
+                    <div class="control">
+                        <input class="input" type="time" value={{res.hora}} readonly />
+                    </div>    
+                </div>
+                <div class="iconp">
+                    <i class="fa-solid fa-sun fa-lg" style="color: #033d1e;"></i>                    
+                    <p>Días</p> 
+                    <div class="control">
+                        <input class="input" type="number" value={{res.dias}} readonly />
+                    </div>   
+                </div>
+            </section>
+            <section class="third">
+                <div class="iconp">
+                    <i class="fa-solid fa-user fa-lg" style="color: #033d1e;"></i>
+                    <p>Nombre</p> 
+                    <div class="control">
+                        <input class="input" type="text" value={{res.nombre}} readonly />
+                    </div>   
+                </div>
+                <div class="iconp">
+                    <i class="fa-solid fa-phone" style="color: #033d1e;"></i>
+                    <p>Teléfono</p>    
+                    <div class="control">
+                        <input class="input" type="text" value={{res.telefono}} readonly />
+                    </div>   
+                </div>
+                <div class="iconp">
+                    <i class="fa-solid fa-envelope fa-lg" style="color: #033d1e;"></i>
+                    <p>Correo</p>
+                    <div class="control">
+                        <input class="input" type="email" value={{res.correo}} readonly />
+                    </div>   
+                </div>
+                <div class="iconp">
+                    <i class="fa-solid fa-money-check-dollar fa-lg" style="color: #033d1e;"></i>
+                    <p>Precio Total</p>    
+                    <div class="control">
+                        <input class="dinero input has-background-grey-darker has-text-light" type="text" value="${{res.precio}}" readonly />
+                    </div>  
+                </div>
+            </section>
+        </section>
+    }
+    }
 </div>
