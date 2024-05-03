@@ -1,0 +1,80 @@
+<h1>Reservaciones de fechas anteriores</h1>
+<div class="anteriorContainer">
+    @for(casa of listadoCasa; track casa){
+        <section class="reserva">
+            <section class="first">
+                <img class="image materialboxed" [src]=getImage(casa)>
+                <p class="titulo">{{casa.nombre}}</p>
+                <p class="lugar">{{casa.lugar}}</p>
+                <div class="estrella iconp">                    
+                    <p>{{casa.calificacion}}</p>
+                    <i class="fa-solid fa-star fa-sm" style="color: #000000;"></i>
+                </div>
+            </section>
+            <section class="second">
+                <div class="iconp">
+                    <i class="fa-solid fa-calendar-day fa-lg" style="color: #033d1e;"></i>
+                    <p>Fecha inicial</p>
+                    <div class="control">
+                        <input class="input" type="date" value="2024-06-01" readonly />
+                    </div>   
+                </div>
+                <div class="iconp">
+                    <i class="fa-solid fa-calendar-check fa-lg" style="color: #033d1e;"></i>
+                    <p>Fecha Final</p> 
+                    <div class="control">
+                        <input class="input" type="date" value="2024-07-01" readonly />
+                    </div>      
+                </div>
+                <div class="iconp">
+                    <i class="fa-solid fa-clock fa-lg" style="color: #033d1e;"></i>
+                    <p>Hora</p>  
+                    <div class="control">
+                        <input class="input" type="time" value="11:10" readonly />
+                    </div>    
+                </div>
+                <div class="iconp">
+                    <i class="fa-solid fa-sun fa-lg" style="color: #033d1e;"></i>                    <p>Días</p> 
+                    <div class="control">
+                        <input class="input" type="number" value="3" readonly />
+                    </div>   
+                </div>
+            </section>
+            <section class="third">
+                <div class="iconp">
+                    <i class="fa-solid fa-user fa-lg" style="color: #033d1e;"></i>
+                    <p>Nombre</p> 
+                    <div class="control">
+                        <input class="input" type="text" value="Laura" readonly />
+                    </div>   
+                </div>
+                <div class="iconp">
+                    <i class="fa-solid fa-phone" style="color: #033d1e;"></i>
+                    <p>Teléfono</p>    
+                    <div class="control">
+                        <input class="input" type="text" value="3461150701" readonly />
+                    </div>   
+                </div>
+                <div class="iconp">
+                    <i class="fa-solid fa-envelope fa-lg" style="color: #033d1e;"></i>
+                    <p>Correo</p>
+                    <div class="control">
+                        <input class="input" type="email" value="danila@gmail" readonly />
+                    </div>   
+                </div>
+                <div class="iconp">
+                    <i class="fa-solid fa-money-check-dollar fa-lg" style="color: #033d1e;"></i>
+                    <p>Precio Total</p>    
+                    <div class="control">
+                        <input class="dinero input has-background-grey-darker has-text-light" type="text" value="$1000" readonly />
+                    </div>  
+                </div>
+            </section>
+        </section>
+    }
+</div>
+
+<h1>Reservaciones de fechas futuras</h1>
+<div class="futurasContainer">
+    
+</div>
