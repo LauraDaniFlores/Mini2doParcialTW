@@ -3,11 +3,6 @@
 }
 
 
-
-
-
-
-
 .espaciol{
     padding: 3px;
     margin-top: 3px;
@@ -80,23 +75,23 @@
 
 
 /* Menu Opciones */
-.menu {
+.menu2 {
     display: flex;
     justify-content: center;
     margin-top: 10px;
   }
 
-  .menu a span:first-child {
+  .menu2 a span:first-child {
     display: inline-block;
     padding: 10px;
   }
 
-  .menu a {
+  .menu2 a {
     display: block;
     position: relative;
     overflow: hidden;
   }
-  .menu a span:last-child {
+  .menu2 a span:last-child {
     position: absolute;
     top: 0;
     right: 0;
@@ -108,17 +103,17 @@
     transform: translateY(-100%);
   }
 
-  .menu a span {
+  .menu2 a span {
     transition: transform 0.2s ease-out;
   }
-  .menu a:hover span:first-child {
+  .menu2 a:hover span:first-child {
     transform: translateY(100%);
   }
-  .menu a:hover span:last-child {
+  .menu2 a:hover span:last-child {
     transform: none;
   }
 
-  .menu[data-animation="to-top"] a span:last-child {
+  .menu2[data-animation="to-top"] a span:last-child {
     transform: translateY(100%);
   }
 

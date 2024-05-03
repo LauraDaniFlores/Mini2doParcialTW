@@ -1,0 +1,116 @@
+/* Poner la imagen estatica */
+.contenidocom{
+    background-color: white;
+    height: auto;
+}
+
+.contenedor{
+    color: white;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: none;
+    margin-right: none;
+    margin-left: none;
+    
+}
+
+.contenedor-table{
+    color: white;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: none;
+    margin-right: none;
+    margin-left: none;
+    
+}
+
+
+
+ 
+
+.centrado{
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.749);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    margin: none;
+}
+
+.context-enc{
+    margin: 60px;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 70px;
+    font-size: 17.5px;
+}
+
+.context-sub{
+    margin-top: 40px;
+    font-size: 13px;
+}
+
+.context-ref{
+    margin-top: 40px;
+    font-size: 9px;
+}
+
+
+
+.segcontenido{
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 50px;
+}
+
+.centradot{
+    width: 320px;
+    height: 230px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.749);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+   
+}
+
+
+.redimension-table {
+    width: 420px;
+    height: 50px;
+   
+    
+
+}
+
+.context-enctt{
+    margin: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.context-subtt{
+    margin-top: 40px;
+    font-size: 9px;
+}
+
+
+.context-enct{
+    margin: 25px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 17px;
+}
+
+.context-subt{
+    margin-top: 40px;
+    font-size: 9px;
+}
