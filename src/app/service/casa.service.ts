@@ -14,5 +14,9 @@ export class CasaService {
   getLugares():Casa[]{
     return this.casa;
   }
+
+  getUnLugar(posicion:number):Casa{
+    return this.casa[posicion];
+  }
 }
 

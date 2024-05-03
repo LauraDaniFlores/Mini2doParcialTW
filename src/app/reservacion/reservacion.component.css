@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+.info, .formulario{
+    margin: 0px 80px;
+}
+
+.infoMain{
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 'nombre nombre nombre nombre'
+                        'imagen imagen datos datos';
+}
+
+.infoImg img{
+    width: 100%;
+}
+
+.infoImg{
+    grid-area: imagen;
+    width: 600px;
+}
+
+.infoCasa{
+    grid-area: datos;
+    width: 95%;
+    margin-left: 20px;
+}
+
+.name{
+    grid-area: nombre;
+}
+
+.lugar, .anfitrion{
+    margin-bottom: 10px;
+}
+
+.direccion{
+    margin-bottom: 40px;
+}
+
+.desc{
+    margin-bottom: 30px;
+}
+
+.negritas{
+    font-weight: bold;
+}
+
+.regresar{
+    text-align: center;
+    background-color: #033D1E;;
+    color: white;
+    width: 300px;
+    height: 60px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.regresarDiv{
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    height: 90px;
+}
+
+.estrella{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.anfi{
+    border-top: 1px solid #033D1E;
+    border-bottom: 1px solid #033D1E;
+    display: flex;
+    padding: 20px 0px;
+    margin-top: 43px;
+}
+.anfiInfo{
+    margin-left: 20px;
+}
+
+.iconA{
+    font-size: 50px;
+}
+
+.precio{
+    margin-bottom: 30px;
+}
+
+.calf{
+    margin-right: 10px;
+}
+
+.infoSec{
+    margin: 100px 0px;
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 'ofrece galeria galeria galeria';
+    display:flex;
+    justify-content: space-between;
+    border: 3px solid #033D1E;
+    padding: 30px;
+}
+
+.ofrece{
+    grid-area: ofrece;
+}
+.carousel {
+    grid-area: galeria;
+    width: 950px;
+    height: 200px;
+}
+.mapa{
+    grid-area: mapa;
+}
+
+.formulario{
+    display: flex;
+}
+
+.calendario button{
+    display: block;
+    margin: 20px auto;
+}
+.calendario{
+    width: 400px;
+}
+
+.cliente{
+    width: 600px;
+}

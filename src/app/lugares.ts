@@ -35,7 +35,7 @@ export const Lugares:Casa[]=[
         ofrece: ['Wifi', 'Área para trabajar', 'Tv', 'Aire acondicionadao', 'Ascensor']
     },
     {
-        imagen: ['assets/imagenes/Casas/Aguascalientes2/Aguas1.webp','assets/imagenes/Casas/Aguascalientes2/Aguas2.webp','assets/imagenes/Casas/Aguascalientes2/Aguas3.webp', 'assets/imagenes/Casas/Aguascalientes2/Aguas4.webp','assets/imagenes/Casas/Aguascalientes2/Aguas5.webp' ],
+        imagen: ['assets/imagenes/Casas/Aguascalientes2/Aguas1.webp','assets/imagenes/Casas/Aguascalientes2/Aguas2.jpeg','assets/imagenes/Casas/Aguascalientes2/Aguas3.jpeg', 'assets/imagenes/Casas/Aguascalientes2/Aguas4.webp','assets/imagenes/Casas/Aguascalientes2/Aguas5.webp' ],
         nombre: 'Alojamiento entero',
         direccion: '2005 Av Independiente, Desarrollo Especial Galerías',
         calificacion: 4.90,
