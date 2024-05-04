@@ -79,7 +79,7 @@ export const Lugares:Casa[]=[
         ofrece: ['Wifi', 'Acceso al lago', 'Cocina', 'Tv', 'Ascensor']
     },
     {
-        imagen: ['assets/imagenes/Casas/Guanajuato/Guanajuato2.1.webp', 'src/assets/imagenes/Casas/Guanajuato/Guanajuato2.2.webp',  'src/assets/imagenes/Casas/Guanajuato/Guanajuato2.3.webp', 'src/assets/imagenes/Casas/Guanajuato/Guanajuato2.4.webp', 'src/assets/imagenes/Casas/Guanajuato/Guanajuato2.5.webp', 'src/assets/imagenes/Casas/Guanajuato/Guanajuato2.6.webp'],
+        imagen: ['assets/imagenes/Casas/Guanajuato/Guanajuato21.webp', 'assets/imagenes/Casas/Guanajuato/Guanajuato22.webp',  'assets/imagenes/Casas/Guanajuato/Guanajuato23.webp', 'assets/imagenes/Casas/Guanajuato/Guanajuato24.webp', 'assets/imagenes/Casas/Guanajuato/Guanajuato25.webp', 'assets/imagenes/Casas/Guanajuato/Guanajuato26.webp'],
         nombre: 'Alojamiento entero: condominio en Marfil',
         direccion: '70 Mineral de Valenciana',
         calificacion: 5.0,
@@ -91,12 +91,12 @@ export const Lugares:Casa[]=[
 
     },
     {
-        imagen: ['assets/imagenes/Casas/Colima/Colima1.webp', 'assets/imagenes/Casas/Colima/Colima2.webp', 'assets/imagenes/Casas/Colima/Colima3.webp', 'assets/imagenes/Casas/Colima/Colima4.webp'],
+        imagen: ['assets/imagenes/Casas/Colima/Colima1.webp', 'assets/imagenes/Casas/Colima/Colima2.webp', 'assets/imagenes/Casas/Colima/Colima3.webp', 'assets/imagenes/Casas/Colima/Colima4.jpeg'],
         nombre: 'Alojamiento entero',
         direccion: '195 de los Diamantes',
         calificacion: 4.84,
         descripcion:'6 huéspedes - 2 habitaciones - 3 camas - 1 baño',
-        lugar: ['Colima', 'Colima'],
+        lugar: ['Colima', 'Colima', 'México'],
         anfitrion: 'Gaby',
         precio: 755,
         ofrece: ['Cocina', 'wifi', 'Tv y Netflix', 'Refrigerador']
