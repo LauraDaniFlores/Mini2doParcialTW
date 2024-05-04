@@ -1,0 +1,78 @@
+.fondo {
+    background-image: url('../../assets/img/uaafondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #033D1E;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.title-container { 
+    text-align: center; 
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 30px;
+    color: aliceblue;
+    font-weight: bold;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .7);
+    display: inline-block;
+}
+
+.column.is-half-tablet.is-one-quarter-desktop {
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
+.card {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.subtitle.is-size-5 {
+    color: #FDEA03;
+    
+    
+}
+
+.iconos a i {
+    color: white; 
+    font-size: 28px; 
+}
+
+.card.horizontal-card {
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
+.title.is-size-4,
+.is-size-7,
+.content {
+    color: white;
+}
+
+
+.container {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.card-content .media {
+    display: flex;
+    align-items: center; 
+  }
+  
+  .card-content .media-content {
+    text-align: center; 
+  }
+
+  .content{
+    font-size: 14px;
+  }

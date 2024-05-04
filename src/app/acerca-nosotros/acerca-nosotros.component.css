@@ -1,0 +1,70 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+main {
+    padding: 20px;
+    background-image: url(../../assets/img/arb.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about-us {
+    margin-bottom: 40px;
+    color: white;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.our-work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.stat {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.stat img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.projects {
+    margin-bottom: 40px;
+}
+
+.projects h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.call-to-action {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
