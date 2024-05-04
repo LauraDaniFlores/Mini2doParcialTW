@@ -6,7 +6,7 @@ import { Calendar, CalendarModule } from 'primeng/calendar';
 import { Casa } from '../interface/casa';
 import { CasaService } from '../service/casa.service';
 import { GalleriaModule } from 'primeng/galleria';
-// import { GMapModule } from 'primeng/gmap';
+// import {GMapModule} from 'primeng/gmap';
 
 @Component({
   selector: 'app-reservacion',
@@ -33,7 +33,7 @@ export class ReservacionComponent {
     this.casa = this.miservicio.getUnLugar(3);
     console.log(this.casa);
     this.carrusel = this.casa.imagen;
-    // this.casa.splice(0, 1);    
+    // this.carrusel.splice(0, 1);
     console.log(this.carrusel);
   }
   

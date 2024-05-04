@@ -79,7 +79,7 @@
     border-bottom: 1px solid #033D1E;
     display: flex;
     padding: 20px 0px;
-    margin-top: 43px;
+    margin-top: 30px;
 }
 .anfiInfo{
     margin-left: 20px;
@@ -105,34 +105,71 @@
     grid-template-areas: 'ofrece galeria galeria galeria';
     display:flex;
     justify-content: space-between;
-    border: 3px solid #033D1E;
-    padding: 30px;
+    align-items: center;
+    /* border: 3px solid #033D1E; */
 }
 
 .ofrece{
     grid-area: ofrece;
+    border: 3px solid #033D1E;
+    padding: 70px 20px;
+    min-width: 250px;
+    height: 400px;
 }
+
+.imgMore{
+    min-width: 200px;
+}
+
 .carousel {
     grid-area: galeria;
-    width: 950px;
-    height: 200px;
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    align-items: center;
 }
 .mapa{
     grid-area: mapa;
 }
 
-.formulario{
-    display: flex;
+.calendario{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.hora{
+    width: 100%;
+    padding-left: 20%;
 }
 
-.calendario button{
-    display: block;
-    margin: 20px auto;
+.horaPicker{
+    text-align: center;
 }
-.calendario{
+
+.date{
     width: 400px;
+    width: 30%;
+    min-width: 400px;
 }
 
 .cliente{
-    width: 600px;
+    width: 60%;
+}
+
+
+.infoForm{
+    display: flex;
+}
+
+.field{
+    margin-bottom: 20px;
+}
+
+.buttonReservar{
+    width: 300px;
+    margin: 50px auto;
+}
+
+.center, span{
+    text-align: center;
 }

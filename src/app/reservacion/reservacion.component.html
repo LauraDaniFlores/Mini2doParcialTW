@@ -34,9 +34,16 @@
         }
       </ul>
     </div>
-    <div class="carousel">
+    <!-- <div class="carousel">
       @for (img of carrusel; track img) {
         <a class="carousel-item" href="#one!"><img src={{img}}></a>
+      }
+    </div> -->
+    <div class="carousel columns is-mobile">
+      @for (img of carrusel; track img; let i=$index) {
+        @if (i != 0) {
+          <div class="column is-4"><img src={{img}} alt="" class="imgMore"></div>
+        }
       }
     </div>
   </div>
@@ -46,46 +53,64 @@
 </section>
 
 <section class="formulario">
-  <div class="calendario">
-    <p-calendar class="cal" selectionMode="range" class="max-w-full" [inline]="true" [showWeek]="true" [readonlyInput]="true" [(ngModel)]="fecha">
-      <ng-template pTemplate="date" let-date>
-          <span [ngStyle]="{textDecoration: (date.day < 21 && date.day > 10) ? 'line-through' : 'inherit'}">{{date.day}}</span>
-      </ng-template>
-    </p-calendar>
-    <button (click)="ComprobarFecha()" class="regresar">Comprobar</button>
+  <div class="infoForm">
+    <div class="date">
+      <div class="calendario">
+        <p-calendar selectionMode="range" class="max-w-full" [inline]="true" [showWeek]="true" [readonlyInput]="true" [(ngModel)]="fecha" >
+          <ng-template pTemplate="date" let-date>
+              <span [ngStyle]="{textDecoration: (date.day < 21 && date.day > 10) ? 'line-through' : 'inherit'}">{{date.day}}</span>
+          </ng-template>
+        </p-calendar>
+      </div>
+      <div class="hora">
+        <!-- <p-calendar  id="startHour" name="startHour" [timeOnly]="true" hourFormat="12" [inline]="false" 
+        placeholder="Hora Llegada" [(ngModel)]="hora" class="horaPicker"></p-calendar> -->
+        <p-calendar
+          inputId="calendar-12h"  
+          [timeOnly]="true"
+          [showTime]="true" 
+          [hourFormat]="'12'"
+          [(ngModel)]="hora"
+          class="center"
+          ><ng-template pTemplate="footer">Hora de llegada</ng-template>
+        </p-calendar>
+      </div>
+    </div>
+    <div class="cliente">
+  
+      <div class="field">
+        <label class="label">Nombre</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input" type="text" placeholder="Text input" value="" [(ngModel)]="nombre">
+          <span class="icon is-small is-left">
+            <i class="fas fa-user"></i>
+          </span>
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Email</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input" type="email" placeholder="Email input" value="" [(ngModel)]="email">
+          <span class="icon is-small is-left">
+            <i class="fas fa-envelope"></i>
+          </span>
+        </div>
+      </div>
+      <div class="field">
+        <label class="label">Teléfono</label>
+        <div class="control has-icons-left has-icons-right">
+          <input class="input" type="text" placeholder="1111-1111-1111" value="" [(ngModel)]="telefono">
+          <span class="icon is-small is-left">
+            <i class="fas fa-phone"></i>
+          </span>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="cliente">
-    <p-calendar  id="startHour" name="startHour" [timeOnly]="true" hourFormat="12" [inline]="false" 
-    placeholder="Seleciona hora de llegada" [(ngModel)]="hora" ></p-calendar>
-    <div class="field">
-      <label class="label">Nombre</label>
-      <div class="control has-icons-left has-icons-right">
-        <input class="input" type="text" placeholder="Text input" value="" [(ngModel)]="nombre">
-        <span class="icon is-small is-left">
-          <i class="fas fa-user"></i>
-        </span>
-      </div>
-    </div>
-    <div class="field">
-      <label class="label">Email</label>
-      <div class="control has-icons-left has-icons-right">
-        <input class="input" type="email" placeholder="Email input" value="" [(ngModel)]="email">
-        <span class="icon is-small is-left">
-          <i class="fas fa-envelope"></i>
-        </span>
-      </div>
-    </div>
-    <div class="field">
-      <label class="label">Teléfono</label>
-      <div class="control has-icons-left has-icons-right">
-        <input class="input" type="text" placeholder="1111-1111-1111" value="" [(ngModel)]="telefono">
-        <span class="icon is-small is-left">
-          <i class="fas fa-phone"></i>
-        </span>
-      </div>
-    </div>
+  
+  <div class="buttonReservar">
+    <button (click)="ComprobarFecha()" class="regresar">Reservar</button>
   </div>
-
 
 </section>
 
