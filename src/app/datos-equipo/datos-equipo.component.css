@@ -20,13 +20,14 @@
     background-color: rgba(0, 0, 0, .7);
     background-color: #282828;
     display: inline-block;
-    font-size: 25px;
+    font-size: 28px;
     /* border: 2px solid black; */
     /* box-shadow: 0 0 9px 0.5px white; */
     text-align: center; 
     margin: 40px auto;
     display: flex;
     justify-content: center;
+    font-weight: bold;
 }
 
 .column.is-half-tablet.is-one-quarter-desktop {

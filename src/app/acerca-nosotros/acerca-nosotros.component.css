@@ -1,17 +1,29 @@
-body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 
 
-h1 {
-    font-size: 24px;
-    margin-bottom: 0;
+.titulo{
+    width: 400px;
+    color: aliceblue;
+    font-weight: bold;
+    padding: 20px;
+    background-color: #282828;
+    display: inline-block;
+    font-size: 28px;
+    /* border: 2px solid black; */
+    /* box-shadow: 0 0 9px 0.5px white; */
+    text-align: center; 
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
 }
 
-main {
+
+
+main.firtPart {
     padding: 20px;
     background-image: url(../../assets/img/arb.jpg);
     background-size: cover;
@@ -21,8 +33,14 @@ main {
 
 .about-us {
     margin-bottom: 40px;
-    color: white;
-    background-color: rgba(0, 0, 0, .7);
+    /* color: white; */
+    /* background-color: rgba(0, 0, 0, .7); */
+    background-color: white;
+    color: black; 
+    width: 90%;
+    margin: 0 auto 50px;
+    padding: 30px;
+    text-align: justify;
 }
 
 .our-work {
@@ -67,4 +85,12 @@ main {
 .container{
     display: flex;
     justify-content: center;
+    margin: 50px auto;
+}
+iframe{
+    border: 5px solid #282828;
+}
+
+.cuadro{
+    height: 140px;
 }
