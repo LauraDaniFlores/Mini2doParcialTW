@@ -1,6 +1,58 @@
-<main>
+<main class="firtPart">
+
+  <div class="titulo"> 
+    <h1>Conoce al Equipo</h1>
+  </div>
+
+
+  <div class="container">
+    <iframe
+      width="560"
+      height="315"
+      [src]="video | domseguro : 'https://www.youtube.com/embed/'"
+      frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-inpicture"
+      allowfullscreen
+    ></iframe>
+  </div>
+
+</main>
+
+  <section class="our-work">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-one-quarter">
+          <div class="card cuadro">
+            <div class="card-content has-text-centered">
+              <p class="title is-4">100 000</p>
+              <p class="subtitle is-6">
+                Localidades con anuncios activos en KING AGS
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-quarter">
+          <div class="card cuadro">
+            <div class="card-content has-text-centered">
+              <p class="title is-4">Más de 1.5 millones</p>
+              <p class="subtitle is-6">De llegadas en total</p>
+            </div>
+          </div>
+        </div>
+        <div class="column is-one-quarter">
+          <div class="card cuadro">
+            <div class="card-content has-text-centered">
+              <p class="title is-4">Más de 2 millones</p>
+              <p class="subtitle is-6">De anfitriones</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<main class="info">
   <section class="about-us">
-    <h1 style="font-weight: bold">Conoce al equipo</h1>
     <p>
       En 1984, nació el concepto de "KING AGS" cuando unos amigos decidieron
       abrir las puertas de su modesta casa en Aguascalientes para recibir a tres
@@ -18,48 +70,4 @@
       apasionados y descubre todo lo que Aguascalientes tiene para ofrecer.
     </p>
   </section>
-
-  <section class="our-work">
-    <div class="container">
-      <div class="columns is-centered">
-        <div class="column is-one-quarter">
-          <div class="card">
-            <div class="card-content has-text-centered">
-              <p class="title is-4">100 000</p>
-              <p class="subtitle is-6">
-                Localidades con anuncios activos en KING AGS
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="column is-one-quarter">
-          <div class="card">
-            <div class="card-content has-text-centered">
-              <p class="title is-4">Más de 1.5 millones</p>
-              <p class="subtitle is-6">De llegadas en total.</p>
-            </div>
-          </div>
-        </div>
-        <div class="column is-one-quarter">
-          <div class="card">
-            <div class="card-content has-text-centered">
-              <p class="title is-4">Mas de 2 millones</p>
-              <p class="subtitle is-6">De anfitriones.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="container" style="margin-top: 50px;">
-    <iframe
-      width="560"
-      height="315"
-      [src]="video | domseguro : 'https://www.youtube.com/embed/'"
-      frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-inpicture"
-      allowfullscreen
-    ></iframe>
-  </div>
 </main>
