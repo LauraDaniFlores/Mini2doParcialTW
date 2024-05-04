@@ -13,17 +13,18 @@
 
 
 .title-container{
-    width: 300px;
+    width: 400px;
     color: aliceblue;
     font-weight: bold;
-    padding: 40px;
+    padding: 20px;
     background-color: rgba(0, 0, 0, .7);
+    background-color: #282828;
     display: inline-block;
-    font-size: 20px;
-    /* border: 1px solid white; */
-    box-shadow: 0 0 5px 1px white;
+    font-size: 25px;
+    /* border: 2px solid black; */
+    /* box-shadow: 0 0 9px 0.5px white; */
     text-align: center; 
-    margin: 30px auto;
+    margin: 40px auto;
     display: flex;
     justify-content: center;
 }
@@ -38,6 +39,8 @@
 }
 .dos{
     width: 80%;
+    display: flex;
+    justify-content: space-evenly;
 }
 .carta{
     margin-bottom: 70px;
@@ -50,6 +53,17 @@
     }
     .logo{
         width: 50%;
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 1200px){
+    .carta {
+        width: 220px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .dos{
+        display: block;
     }
 }
 .subtitle.is-size-6 {
@@ -130,7 +144,4 @@
 
 .card-image .image img{
     object-fit: cover;
-    /* width: 300px;
-    height: 300px;   */
-
 }
