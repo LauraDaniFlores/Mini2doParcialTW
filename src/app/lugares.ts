@@ -86,7 +86,7 @@ export const Lugares:Casa[]=[
         id: 6
     },
     {
-        imagen: ['assets/imagenes/Casas/Guanajuato/Guanajuato21.webp', 'src/assets/imagenes/Casas/Guanajuato/Guanajuato22.webp',  'src/assets/imagenes/Casas/Guanajuato/Guanajuato23.webp', 'src/assets/imagenes/Casas/Guanajuato/Guanajuato24.webp', 'src/assets/imagenes/Casas/Guanajuato/Guanajuato25.webp', 'src/assets/imagenes/Casas/Guanajuato/Guanajuato26.webp'],
+        imagen: ['assets/imagenes/Casas/Guanajuato/Guanajuato21.webp', 'assets/imagenes/Casas/Guanajuato/Guanajuato22.webp',  'assets/imagenes/Casas/Guanajuato/Guanajuato23.webp', 'assets/imagenes/Casas/Guanajuato/Guanajuato24.webp', 'assets/imagenes/Casas/Guanajuato/Guanajuato25.webp', 'assets/imagenes/Casas/Guanajuato/Guanajuato26.webp'],
         nombre: 'Alojamiento entero: condominio en Marfil',
         direccion: '70 Mineral de Valenciana',
         calificacion: 5.0,
@@ -104,7 +104,7 @@ export const Lugares:Casa[]=[
         direccion: '195 de los Diamantes',
         calificacion: 4.84,
         descripcion:'6 huéspedes - 2 habitaciones - 3 camas - 1 baño',
-        lugar: ['Colima', 'Colima'],
+        lugar: ['Colima', 'Colima', 'México'],
         anfitrion: 'Gaby',
         precio: 755,
         ofrece: ['Cocina', 'wifi', 'Tv y Netflix', 'Refrigerador'],

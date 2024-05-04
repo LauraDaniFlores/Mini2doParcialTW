@@ -1,0 +1,124 @@
+<section class="bodyR">
+  <div class="regresarDiv">
+    <button class="regresar">Regresar</button>
+  </div>
+  <section class="info">
+    <div class="infoMain">
+      <h1 class="is-size-2 name">{{casa.nombre}}</h1>
+      <div class="infoImg">
+        <img src="{{casa.imagen[0]}}" alt="casa" class="imgMain">
+      </div>
+      <div class="infoCasa">
+        <h1 class="is-size-3 lugar">{{casa.lugar}}</h1>
+        <h1 class="is-size-4 direccion">{{casa.direccion}}</h1>
+        <h1 class="is-size-5 desc">${{casa.descripcion}}</h1>
+        <h1 class="is-size-5 precio"><span class="negritas">Precio:</span> ${{casa.precio}} MX</h1>
+        <div class="estrella">                    
+          <h1 class="is-size-5 calf">{{casa.calificacion}}</h1>
+          <i class="fa-solid fa-star fa-2xl" style="color: #000000;"></i>
+        </div>
+        <div class="estrella anfi">
+          <i class="fa-solid fa-circle-user fa-2xl iconA" style="color: #033d1e;"></i>
+          <div class="anfiInfo">
+            <h1 class="is-size-6 anfitrion"><span class="negritas">Anfitrion:</span> {{casa.anfitrion}}</h1>
+            <h1 class="is-size-6">Superanfitrión, obviamente</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="infoSec">
+      <div class="ofrece">
+        <h1 class="is-size-5">Servicios que ofrece</h1> <br>
+        <ul>
+          @for (i of casa.ofrece; track i) {
+            <li><i class="fa-solid fa-house-user fa-lg" style="color: black;"></i> {{i}}</li>
+          }
+        </ul>
+      </div>
+      <!-- <div class="carousel">
+        @for (img of carrusel; track img) {
+          <a class="carousel-item" href="#one!"><img src={{img}}></a>
+        }
+      </div> -->
+      <div class="carousel columns is-mobile">
+        @for (img of carrusel; track img; let i=$index) {
+          @if (i != 0) {
+            <div class="column is-4"><img src={{img}} alt="" class="imgMore"></div>
+          }
+        }
+      </div>
+    </div>
+    <div class="mapa">
+    </div>
+  </section>
+  
+  <section class="formulario">
+    <h1 class="is-size-2 tituloForm">Haz tu reservación</h1>
+    <div class="infoForm">
+      <div class="date">
+        <div class="calendario">
+          <p-calendar selectionMode="range" class="max-w-full" [inline]="true" [showWeek]="true" [readonlyInput]="true" [(ngModel)]="fecha" >
+            <ng-template pTemplate="date" let-date>
+                <span [ngStyle]="{textDecoration: (date.day < 21 && date.day > 10) ? 'line-through' : 'inherit'}">{{date.day}}</span>
+            </ng-template>
+          </p-calendar>
+        </div>
+        <div class="hora">
+          <!-- <p-calendar  id="startHour" name="startHour" [timeOnly]="true" hourFormat="12" [inline]="false" 
+          placeholder="Hora Llegada" [(ngModel)]="hora" class="horaPicker"></p-calendar> -->
+          <p-calendar
+            inputId="calendar-12h"  
+            [timeOnly]="true"
+            [showTime]="true" 
+            [hourFormat]="'12'"
+            [(ngModel)]="hora"
+            class="center"
+            ><ng-template pTemplate="footer">Hora de llegada</ng-template>
+          </p-calendar>
+        </div>
+      </div>
+      <div class="cliente">
+    
+        <div class="field">
+          <label class="label">Nombre</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input" type="text" placeholder="Text input" value="" [(ngModel)]="nombre">
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input" type="email" placeholder="Email input" value="" [(ngModel)]="email">
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label">Teléfono</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input" type="text" placeholder="111-111-1111" value="" [(ngModel)]="telefono">
+            <span class="icon is-small is-left">
+              <i class="fas fa-phone"></i>
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="buttonReservar">
+      <button (click)="validateInfo()" class="regresar">Reservar</button>
+    </div>
+  
+  </section>
+</section>
+
+
+
+
+
+
+

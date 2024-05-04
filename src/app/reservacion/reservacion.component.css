@@ -1,0 +1,199 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+.bodyR{
+    background-color: #18141c;
+}
+
+.info, .formulario{
+    margin: 0px 80px;
+}
+
+.infoMain{
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 'nombre nombre nombre nombre'
+                        'imagen imagen datos datos';
+}
+
+.infoImg img{
+    width: 100%;
+    max-height: 370px;
+    object-fit: cover;
+}
+
+.infoImg{
+    grid-area: imagen;
+    width: 600px;
+}
+
+.infoCasa{
+    grid-area: datos;
+    width: 95%;
+    margin-left: 20px;
+}
+
+.name{
+    grid-area: nombre;
+}
+
+.lugar, .anfitrion{
+    margin-bottom: 10px;
+}
+
+.direccion{
+    margin-bottom: 40px;
+}
+
+.desc{
+    margin-bottom: 30px;
+}
+
+.negritas{
+    font-weight: bold;
+}
+
+.regresar{
+    text-align: center;
+    background-color: #033D1E;;
+    color: white;
+    width: 300px;
+    height: 60px;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+.regresarDiv{
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    height: 90px;
+}
+
+.estrella{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.anfi{
+    border-top: 1px solid #033D1E;
+    border-bottom: 1px solid #033D1E;
+    display: flex;
+    padding: 20px 0px;
+    margin-top: 30px;
+}
+.anfiInfo{
+    margin-left: 20px;
+}
+
+.iconA{
+    font-size: 50px;
+}
+
+.precio{
+    margin-bottom: 30px;
+}
+
+.calf{
+    margin-right: 10px;
+}
+
+.infoSec{
+    margin: 100px 0px;
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 'ofrece galeria galeria galeria';
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 3px solid #033D1E; */
+}
+
+.ofrece{
+    grid-area: ofrece;
+    border: 3px solid #033D1E;
+    padding: 70px 20px;
+    width: 250px;
+    min-width: 250px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.imgMore{
+    min-width: 200px;
+}
+
+.carousel {
+    grid-area: galeria;
+    width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    align-items: center;
+
+}
+.mapa{
+    grid-area: mapa;
+}
+
+.calendario{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.hora{
+    width: 100%;
+    padding-left: 20%;
+}
+
+.horaPicker{
+    text-align: center;
+}
+
+.date{
+    width: 400px;
+    width: 30%;
+    min-width: 400px;
+}
+
+.cliente{
+    width: 60%;
+}
+
+
+.infoForm{
+    display: flex;
+}
+
+.field{
+    margin-bottom: 20px;
+}
+
+.buttonReservar{
+    width: 300px;
+    margin: 50px auto;
+}
+
+.center, .p-element , .tituloForm{
+    text-align: center;
+
+}
+
+.tituloForm{
+    margin-bottom: 60px;
+    font-weight: bold;
+}
+
+.wrong{
+    margin-bottom: 1px solid rgb(106, 13, 13);
+}
+.correct{
+    margin-bottom: 1px solid rgb(8, 79, 20);
+}
