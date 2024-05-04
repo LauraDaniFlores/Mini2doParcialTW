@@ -6,13 +6,15 @@ import { ColorPickerModule } from 'primeng/colorpicker';
 import { FooterComponent } from './footer/footer.component';
 import { EncabezadoComponent } from "../encabezado/encabezado.component";
 import { ReservacionesComponent } from "./reservaciones/reservaciones.component";
+import { AcercaNosotrosComponent } from "./acerca-nosotros/acerca-nosotros.component";
+import { DatosEquipoComponent } from "./datos-equipo/datos-equipo.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
-    imports: [RouterOutlet, OpcLugaresComponent, FooterComponent, EncabezadoComponent, ReservacionesComponent]
+    imports: [RouterOutlet, OpcLugaresComponent, FooterComponent, EncabezadoComponent, ReservacionesComponent, AcercaNosotrosComponent, DatosEquipoComponent]
 })
 
 export class AppComponent {
