@@ -9,9 +9,12 @@ import { HttpClient } from '@angular/common/http';
 
 export class ApiServiceService {
 
-  constructor(private http: HttpClient) {}
+  // https://turismo.free.beeceptor.com/todos
+  urlAPI: string = "";
+
+  constructor(private http: HttpClient) {};
   
   retornar(){
-    return this.http.get("https://gaia.inegi.org.mx/wscatgeo/mgee/").pipe(take(1)); 
+    return this.http.get(this.urlAPI).pipe(take(1),); 
   }
 }

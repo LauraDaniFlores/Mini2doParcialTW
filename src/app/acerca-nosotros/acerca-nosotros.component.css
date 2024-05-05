@@ -3,8 +3,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-
-
 .titulo{
     width: 400px;
     color: aliceblue;
@@ -31,14 +29,18 @@ main.firtPart {
     font-family: 'Montserrat', sans-serif;
 }
 
+.info{
+    margin: 0px 50px;
+    margin-bottom: 50px;
+}
+
 .about-us {
     margin-bottom: 40px;
     /* color: white; */
     /* background-color: rgba(0, 0, 0, .7); */
     background-color: white;
     color: black; 
-    width: 90%;
-    margin: 0 auto 50px;
+    width: 100%;
     padding: 30px;
     text-align: justify;
 }
@@ -93,4 +95,61 @@ iframe{
 
 .cuadro{
     height: 140px;
+}
+
+
+ul{
+    list-style-type: circle;
+}
+
+.api tr:first-child{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+tr th{
+    background-color: #033D1E;
+    color: white;
+    padding: 15px;
+}
+
+tr td:first-child, tr td:nth-child(3), tr td:nth-child(4){
+    padding-left: 10px;
+    padding-top: 15px;
+}
+
+.imgApi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0px;
+    border-top: 0.5px solid white;
+    border-bottom: 0.5px solid white;
+}
+
+tr td .imgApi:first-child{
+    border-top: none;
+}
+
+.imgApi:last-child{
+    border-bottom: none;
+}
+
+tr{
+    color: #FFF;
+    background-color: #282828;
+}
+tr:hover{
+    background-color: #363636;
+}
+
+
+tr:nth-child(even) {
+    background-color: #033D1E;
+}
+
+tr:nth-child(even):hover {
+    background-color: #03572a;
 }

@@ -70,4 +70,44 @@
       apasionados y descubre todo lo que Aguascalientes tiene para ofrecer.
     </p>
   </section>
+
+  <section class="api">
+    <p-table [value]="array" [tableStyle]="{'min-width': '60rem'}">
+      <ng-template pTemplate="caption">
+          <div class="flex align-items-center justify-content-between">
+              Estados más turísticos de México
+          </div>
+      </ng-template>
+      <ng-template pTemplate="header">
+          <tr>
+              <th>Estado</th>
+              <th>Imagen</th>
+              <th>Turistas</th>
+              <th>Lugares</th>
+          </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-api>
+    <!-- @for (lugar of api; track lugar) { -->
+      <tr>
+        <td>{{api.estado}}</td>
+        <td class="imgApi">
+          <p-image 
+            [src]="'assets/Estados/' + api.imagen"
+            [alt]="api.estado"
+            width="200"
+            class="shadow-4 color"
+            [preview]="true" />
+          <!-- <img [src]="'assets/Estados/' + api.imagen" [alt]="api.estado" width="100" class="shadow-4" /> -->
+        </td>
+        <td>{{api.turistas}} visitantes</td>
+        <td> <ul>
+        @for (i of api.lugares; track i) {
+          <li>{{i}}</li>
+        }
+      </ul></td>
+      </tr>
+    <!-- } -->
+    </ng-template>
+  </p-table>
+  </section>
 </main>
