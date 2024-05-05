@@ -13,7 +13,7 @@ h1{
 }
 
 
-div.anteriorContainer{
+div.anteriorContainer, div.futurasContainer{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
