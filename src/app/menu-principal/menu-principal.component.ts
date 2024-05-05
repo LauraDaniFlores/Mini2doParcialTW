@@ -1,7 +1,7 @@
 import { Component} from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { DialogModule } from 'primeng/dialog';
-
+import { Router, RouterModule } from '@angular/router';
 
 
 @Component({
@@ -10,7 +10,7 @@ import { DialogModule } from 'primeng/dialog';
     templateUrl: './menu-principal.component.html',
     // styleUrl: './menu-principal.component.css',
     styleUrls: ['./menu-principal.component.css'], 
-    imports: [DialogModule, ButtonModule]
+    imports: [DialogModule, ButtonModule, RouterModule]
 })
 export class MenuPrincipalComponent{
 

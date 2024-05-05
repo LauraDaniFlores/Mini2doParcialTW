@@ -405,7 +405,6 @@
   margin-bottom: 0;
   padding-bottom: 0;
   overflow:hidden;
-
 }
 
 .slider-box ul{
@@ -418,6 +417,7 @@
   padding-top: 0;
   width: 400%;
   animation: slide 20s infinite alternate ease-in-out;
+  margin-bottom: -7px;
 }
 
 .slider-box li{
