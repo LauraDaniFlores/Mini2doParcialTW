@@ -1,0 +1,523 @@
+/* Poner la imagen estatica */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../../assets/Fonts/Montserrat-Regular.ttf');
+  }
+
+
+  body{
+    font-family: 'Montserrat';
+    background-color: white;
+    font-weight: bold;
+    color: white;
+    margin: 0%;
+    padding: 0%;
+
+
+  }
+
+  
+
+
+
+.contenedor {
+    color: white;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: none;
+    margin-right: none;
+    margin-left: none;
+
+}
+
+.contenedor2 {
+    color: white;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: none;
+    margin-right: none;
+    margin-left: none;
+
+    margin-top: 20px;
+
+}
+
+.contenedor-table {
+    color: white;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    margin: none;
+    margin-right: none;
+    margin-left: none;
+
+}
+
+.contenedor-table img{
+    border-radius: 8px;
+
+}
+
+.segcontenido td:hover{
+    scale: 1.1;
+    transition-duration: 1s;
+
+}
+
+
+
+
+
+.centrado {
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.749);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    margin: none;
+}
+
+.centrado2 {
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.749);
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-40%, -40%);
+
+    width: 560px;
+    height: 380px;
+
+    margin: none;
+}
+
+
+.context-enc {
+    margin: 60px;
+    margin-left: 90px;
+    margin-right: 90px;
+    margin-top: 70px;
+    font-size: 17.5px;
+}
+
+.context-sub {
+    margin-top: 40px;
+    font-size: 13px;
+}
+
+.context-ref {
+    margin-top: 40px;
+    font-size: 9px;
+}
+
+
+
+.segcontenido {
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 50px;
+
+}
+
+.tercontenido {
+
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 50px;
+
+
+}
+
+.centradot {
+    width: 320px;
+    height: 230px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.749);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+
+.redimension-table {
+    width: 420px;
+    height: 622px;
+
+
+
+    /* border: 2px solid black; */
+    border-radius: 8px;
+
+
+
+}
+
+.contexto img{
+  margin-left: 100px;
+}
+
+.titulo {
+    text-align: center;
+    color: black;
+
+    font-size: x-large;
+
+    margin-top: 150px;
+    padding-bottom: 20px;
+    font-weight: bold;
+}
+
+.contexto {
+    text-align: justify;
+    color: black;
+
+    font-size: medium;
+
+    font-weight: bold;
+
+    margin-top: 100px;
+    margin: 25px;
+
+    padding: 10px;
+}
+
+
+
+.context-enctt {
+    margin: 40px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.context-subtt {
+    margin-top: 25px;
+    font-size: 9px;
+}
+
+.dcarrusel {
+    padding-bottom: 40px;
+  }
+
+
+.context-enct {
+    margin: 25px;
+    margin-top: 75px;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 15px;
+}
+
+.context-subt {
+    margin-top: 30px;
+    font-size: 9px;
+}
+
+.linea hr {
+    display: grid;
+    justify-content: center;
+    border: 2px solid white;
+    width: 124px;
+}
+
+.context-subt3 {
+    margin-top: 30px;
+    margin: 50px;
+    font-size: 15px;
+}
+
+.context-ref2 {
+    margin-top: 40px;
+    margin: 40px;
+    font-size: 8px;
+}
+
+/* Municipios */
+
+.municipios{
+    margin-top: 60px;
+    text-align: center;
+
+    padding-bottom: 60px;
+}
+
+.municipios button{
+  background-color: none;
+}
+
+.informe p{
+  text-align: justify;
+
+}
+
+.informe img{
+  text-align: center;
+  padding: 30px;
+  width: 300px;
+  height: auto;
+}
+
+.municipiosobj{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    margin-left: 90px;
+
+}
+
+.municipiosobj div{
+    margin-right: 120px;
+}
+
+.municipiosobj img:hover{
+    scale: 1.1;
+    transition-duration: 1s;
+}
+
+.municipios h1{
+    color: black;
+    font-family: 'Montserrat';
+    font-size: 37px;
+
+    font-weight: bold;
+}
+
+
+/* Posicion del boton de generar cita */
+.posboton{
+    display: grid;
+    justify-content: center;
+}
+
+
+/* Diseño de boton */
+.btn-shape {
+    transition: all .3s linear;
+    width: 168px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    outline: none;
+    background-color: #020202;
+    border-radius: 10px;
+    border: 0px;
+    position: relative;
+    z-index: 99;
+    cursor: pointer;
+  }
+
+  .btn-shape::after,
+  .btn-shape::before {
+    content: '';
+    position: absolute;
+    background-color: #020202;
+    width: 100%;
+    opacity: 0;
+    height: 100%;
+    left: 0;
+    border-radius: 100px;
+    bottom: 0;
+    z-index: -2;
+    transition: all .3s linear;
+  }
+
+  .btn-shape span {
+    font-size: 9px;
+    font-weight: 500;
+    transition: all .3s linear;
+    color: #fff;
+    text-transform: capitalize;
+  }
+
+  .btn-shape:hover {
+    transform: translate(-12px, -12px);
+  }
+
+  .btn-shape:hover:after {
+    transform: translate(6px, 6px);
+    opacity: .5;
+  }
+
+  .btn-shape:hover::before {
+    transform: translate(12px, 12px);
+    opacity: .3;
+  }
+
+  .btn-shape:hover span {
+    animation: storm .4s linear both;
+  }
+
+  @keyframes storm {
+    0% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+
+    25% {
+      transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+
+    50% {
+      transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+
+    75% {
+      transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  }
+
+
+  /* Carousel */
+
+.tituloexp{
+  text-align: center;
+  font-size: 45px;
+  padding-top: 60px;
+  padding-bottom: 50px;
+  color: #020202;
+  font-weight: bold;
+
+}
+
+
+
+.slider-box{
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  margin-top: 0;
+  padding: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  overflow:hidden;
+
+}
+
+.slider-box ul{
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 0;
+  padding-top: 0;
+  width: 400%;
+  animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-box li{
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+.texto22{
+  position: absolute;
+  text-align: center;
+  padding: 0 250px;
+  top: 250px;
+  left: 100px;
+  color: white;
+}
+
+.texto22 h2{
+  font-size: 38px;
+  margin-bottom: 35px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px rgb(79, 79, 79);
+}
+
+.slider-box img{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  filter: brightness(70%);
+
+}
+
+@keyframes slide{
+  0%{margin-left: 0;}
+  20%{margin-left: 0;}
+
+  25%{margin-left: -100%;}
+  45%{margin-left: -100%;}
+
+  50%{margin-left: -200%;}
+  70%{margin-left: -200%;}
+
+  75%{margin-left: -300%;}
+  100%{margin-left: -300%;}
+}
+
+
+/* Boton para explorar */
+
+.exploradorc{
+  display: grid;
+  justify-content: center;
+  padding: 50px;
+  margin-bottom: 70px;
+}
+
+
+.buttonexp {
+  width: 170px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 30px;
+  background-color: #1dc000;
+  border-radius: 30px;
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  transition-duration: .2s;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.116);
+  padding-left: 15px;
+  transition-duration: .5s;
+}
+
+.svgIcon {
+  height: 35px;
+  transition-duration: 1.5s;
+}
+
+.bell path {
+  fill: rgb(19, 19, 19);
+}
+
+.buttonexp:hover {
+  background-color: #23d903;
+  transition-duration: .5s;
+}
+
+.buttonexp:active {
+  transform: scale(0.97);
+  transition-duration: .2s;
+}
+
+.buttonexp:hover .svgIcon {
+  transform: rotate(250deg);
+  transition-duration: 1.5s;
+}
+
