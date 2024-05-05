@@ -1,0 +1,88 @@
+<script src="../assets/encabezado.js" defer></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous" />
+
+
+<header>
+  <nav class="navbar fondo" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <div class="espaciol">
+        <a href="">
+          <img width="75px" height="75px" src="../assets/Imagenes_E/image-removebg-preview.png" alt="" />
+        </a>
+      </div>
+
+      <a role="button"
+      class="navbar-burger burger"
+      aria-label="menu"
+      aria-expanded="false"
+      data-target="navbarBasicExample"
+      [class.is-active]="showBurgerMenu"
+      (click)="showBurgerMenu = !showBurgerMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div id="navbarBasicExample" 
+    class="navbar-menu" 
+    [class.is-active]="showBurgerMenu">
+      <div class="navbar-start">
+        <ul class="menu2">
+          <li>
+            <a class="navbar-item">
+              <span>Menú Principal</span>
+              <span>
+                <i class="fas fa-home fa-lg" aria-hidden="true"></i>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a class="navbar-item">
+              <span>Explorar</span>
+              <span>
+                <i class="fas fa-solid fa-compass fa-lg" aria-hidden="true"></i> </span></a>
+          </li>
+          <li>
+            <a class="navbar-item"><span>Reservar</span>
+              <span>
+                <i class="fas fa-solid fa-calendar-check fa-lg" aria-hidden="true"></i>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a class="navbar-item">
+              <span>Datos de equipo</span>
+              <span>
+                <i class="fas fa-solid fa-users fa-lg" aria-hidden="true"></i>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a class="navbar-item">
+              <span>Acerca de Nosotros</span>
+              <span>
+                <i class="fas fa-address-card fa-lg" aria-hidden="true"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+
+      <div class="navbar-end">
+        <div class="buscador">
+          <input type="text" placeholder="Buscador" name="buscar" />
+            <button name="search">
+              <p>BUSCAR</p>
+            </button>
+          
+          
+        </div>
+        
+      </div>
+    </div>
+  </nav>
+
+</header>
