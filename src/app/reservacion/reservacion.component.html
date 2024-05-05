@@ -1,6 +1,6 @@
 <section class="bodyR">
   <div class="regresarDiv">
-    <button class="regresar">Regresar</button>
+    <button class="regresar" >Regresar</button>
   </div>
   <section class="info">
     <div class="infoMain">
@@ -71,7 +71,7 @@
             [timeOnly]="true"
             [showTime]="true" 
             [hourFormat]="'12'"
-            [(ngModel)]="hora"
+            [(ngModel)]="reservaciones.hora"
             class="center"
             ><ng-template pTemplate="footer">Hora de llegada</ng-template>
           </p-calendar>
@@ -82,7 +82,7 @@
         <div class="field">
           <label class="label">Nombre</label>
           <div class="control has-icons-left has-icons-right">
-            <input class="input" type="text" placeholder="Text input" value="" [(ngModel)]="nombre">
+            <input class="input" type="text" placeholder="Nombre" value="" [(ngModel)]="reservaciones.nombre">
             <span class="icon is-small is-left">
               <i class="fas fa-user"></i>
             </span>
@@ -91,7 +91,7 @@
         <div class="field">
           <label class="label">Email</label>
           <div class="control has-icons-left has-icons-right">
-            <input class="input" type="email" placeholder="Email input" value="" [(ngModel)]="email">
+            <input class="input" type="email" placeholder="Correo" value="" [(ngModel)]="reservaciones.correo">
             <span class="icon is-small is-left">
               <i class="fas fa-envelope"></i>
             </span>
@@ -100,7 +100,7 @@
         <div class="field">
           <label class="label">Teléfono</label>
           <div class="control has-icons-left has-icons-right">
-            <input class="input" type="text" placeholder="111-111-1111" value="" [(ngModel)]="telefono">
+            <input class="input" type="text" placeholder="111-111-1111" value="" [(ngModel)]="reservaciones.telefono">
             <span class="icon is-small is-left">
               <i class="fas fa-phone"></i>
             </span>
@@ -110,7 +110,7 @@
     </div>
     
     <div class="buttonReservar">
-      <button (click)="validateInfo()" class="regresar">Reservar</button>
+      <button (click)="validateInfo()" class="regresar" >Reservar</button>
     </div>
   
   </section>

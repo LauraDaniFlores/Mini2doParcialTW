@@ -4,14 +4,14 @@
 }
 h1{
     text-align: center;
-    margin: 60px auto;
+    margin: 60px auto 80px;
     background-color: #282828;
     color: white;
     width: 400px;
     padding: 20px;
-    font-size: 20px;
-
+    font-size: 28px;
 }
+
 
 div.anteriorContainer{
     display: flex;
