@@ -1,0 +1,326 @@
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"> -->
+
+<body>
+  <!-- Primera Sección -->
+  <div class="contenedor">
+    <img src="../assets/Imagenes_PP/ImagenPrincipal.jpg" />
+    <div class="centrado">
+      <div class="context-enc">
+        CASAS Y DEPARTAMENTOS A UN CLIC DE DISTANCIA
+        <div class="context-sub">LUGARES IDEALES EN TODO MÉXICO</div>
+        <div class="context-ref">By KING AGS</div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Segunda Seccion -->
+
+
+  
+  <h2 class="tituloexp">Lugar de Origen</h2>
+
+  <div class="segcontenido">
+    <table>
+      <tr>
+        <td>
+          <div class="contenedor-table">
+            <img
+              src="../assets/Imagenes_PP/Parroquia.jpg"
+              alt=""
+              width="820px"
+              height="50px"
+            />
+            <div class="centradot">
+              <div class="context-enctt">
+                Vive una gran experiencia
+                <div class="linea">
+                  <hr />
+                </div>
+                <div class="context-subtt">
+                  Hospédate en los mejores lugares de Aguascalientes
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+        <td>
+          <div class="redimension-table">
+            <div class="titulo linea2">¿SABÍAS QUÉ?</div>
+
+            <div class="contexto">
+                Aguascalientes se caracteriza por ser un estado lleno de folclore y tradición, y como muestra de 
+                ello, la famosa Fiesta de San Marcos, una de las más emblemáticas y a la que acuden miles de personas, 
+                tanto nacionales como extranjeras, cada año entre los meses de abril y mayo para vivir de cerca el ambiente de 
+                algarabía que se respira.
+
+
+                <img src="../../assets/Imagenes_PP/Ags.png" alt="" width="160px" height="auto">
+            </div>
+
+            
+               
+
+          </div>
+        </td>
+        <td>
+          <div class="contenedor-table">
+            <img
+              src="../assets/Imagenes_PP/Ferocarril.jpg"
+              alt=""
+              width="820px"
+              height="50px"
+            />
+            <div class="centradot">
+              <div class="context-enct">
+                Aguascalientes
+                <div class="linea">
+                  <hr />
+                </div>
+                <div class="context-subt">Ciudad de la gente buena</div>
+              </div>
+            </div>
+          </div>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Tercera Sección -->
+  <div class="contenedor2">
+    <img src="../assets/Imagenes_PP/patrick-tomasso-nWvWBV0sv04-unsplash.jpg" />
+    <div class="centrado2">
+      <div class="context-subt3">
+        SOMOS UNA AGENCIA CON MAS DE 40 AÑOS DE EXPERIENCIA, UBICADOS EN LA BELLA
+        CIUDAD DE AGUASCALIENTES CON MAS DE 80 LUGARES EN LA REPÚBLICA ASOCIADAS A NOSOTROS, LAS
+        CUALES OFRECEN LA MEJOR ATENCION Y ZONA AL MEJOR PRECIO PARA TI.
+        <div class="context-ref2">
+          NO LO PIENSES MÁS Y RESERVA UN LUGAR CON NOSOTROS, DONDE OBTENDRAS
+          LA MEJOR EXPERIENCIA DEL MOMENTO
+        </div>
+      </div>
+
+      <div class="posboton">
+        <button class="btn-shape" [routerLink]="['opc-lugares']">
+          <span class="title"> RESERVAR AHORA </span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="municipios">
+    <h1>Lugares más visitados con frecuencia</h1>
+
+    <div class="municipiosobj">
+      <div>
+        <button (click)="showDialog()" label="Show">
+          <img
+            src="../../assets/Imagenes_PP/calvillo-modified.png"
+            alt=""
+            width="140px"
+            height="auto"
+          />
+        </button>
+        <p-dialog
+          header="Calvillo"
+          [modal]="true"
+          [(visible)]="visible"
+          [style]="{ width: '50rem' }"
+          [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }"
+          [maximizable]="true"
+        >
+        <div class="informe">
+
+            <p>
+                Recibe su nombramiento como Pueblo Mágico en 
+                noviembre de 2012. Ubicado en el estado de Aguascalientes, 
+                lleva el nombre de Calvillo, en honor a su benefactor. Su origen se 
+                da con el establecimiento de una congregación de indios nahuas de San José de Huejúcar, que 
+                significa “lugar de sauces”.
+              </p>
+              <br>
+              <p>
+                Calvillo tiene una tradición artesanal, por lo que se puede visitar la fábrica de velas con 
+                originales diseños y aromas, la bisutería orgánica con una gran variedad de 
+                collares, pulseras y aretes elaborados con frutos y semillas secas y de paso comprar unos ricos quesos artesanales.
+              </p>
+
+              <img src="../../assets/Imagenes_PP/Guayaba.jpg" alt="">
+
+        </div>
+          
+        </p-dialog>
+
+      </div>
+      <div>
+        <img
+          src="../../assets/Imagenes_PP/Monterrey-modified.png"
+          alt=""
+          (click)="showDialog2()" label="Show"
+          width="140px"
+          height="auto"
+        />
+
+        <p-dialog
+          header="Monterrey"
+          [modal]="true"
+          [(visible)]="visible2"
+          [style]="{ width: '50rem' }"
+          [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }"
+          [maximizable]="true"
+        >
+
+        <div class="informe">
+
+            <p>
+                El principal atractivo de la ciudad es ser el Polo Industrial de México, ya que se 
+                distingue por su gran desarrollo comercial y un importante centro educativo y de atracción para la inversión 
+                extranjera. Su ubicación hace que sea un punto clave para México y para la zona sureste de Estados Unidos.
+              </p>
+              <br>
+              <p>
+                A Monterrey se le considera el polo industrial y de negocios de México, así 
+                como un importante centro educativo. Es hogar de destacados grupos
+                 empresariales y reconocidas universidades, y un destino en donde se han establecido con éxito más de 4,100 empresas extranjeras.
+              </p>
+
+              <img src="../../assets/Imagenes_PP/MonterreyL.png" alt="">
+
+        </div>
+          
+        </p-dialog>
+      </div>
+      <div>
+        <img
+          src="../../assets/Imagenes_PP/Cancun-modified.png"
+          alt=""
+          (click)="showDialog3()" label="Show"
+          width="140px"
+          height="auto"
+        />
+
+        
+        <p-dialog
+          header="Cancún"
+          [modal]="true"
+          [(visible)]="visible3"
+          [style]="{ width: '50rem' }"
+          [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }"
+          [maximizable]="true"
+        >
+
+        <div class="informe">
+
+            <p>
+                El atractivo principal en Cancún son sus playas majestuosas. La región está conformada de 17 
+                kilómetros de arena blanca y brillante agua turquesa. Su litoral está 
+                compuesto por una infinita y espectacular vida marina: un gran tesoro para los adeptos al snorkel y el buceo.
+              </p>
+              <br>
+              <p>
+                Playa linda. En Playa Linda encontrarás la mejor vista del mar caribe, esta 
+                se encuentra conectada al canal Sigfrido lo cual da lugar a una 
+                increíble vista de aguas color turquesa que acompañado de arena fina y suave al tacto 
+                te ayudarán a vivir una experiencia memorable en Cancún.
+              </p>
+
+              <img src="../../assets/Imagenes_PP/Peces.png" alt="">
+
+        </div>
+         
+        </p-dialog>
+      </div>
+      <div>
+        <img
+          src="../../assets/Imagenes_PP/xochimilco-modified.png"
+          alt=""
+          (click)="showDialog4()" label="Show"
+          width="140px"
+          height="auto"
+        />
+
+        
+        <p-dialog
+          header="Xochimilco"
+          [modal]="true"
+          [(visible)]="visible4"
+          [style]="{ width: '50rem' }"
+          [breakpoints]="{ '1199px': '75vw', '575px': '90vw' }"
+          [maximizable]="true"
+        >
+
+        <div class="informe">
+            <p>
+                Xochimilco tiene particular importancia por la existencia de las chinampas. Tienen origen en una 
+                técnica agrícola mesoamericana que fue desarrollada y compartida por
+                 varios pueblos del Valle de México. Tras la desecación de los lagos del Anáhuac, solo Xochimilco y 
+                 Tláhuac​ conservan la chinampería.
+              </p>
+              <br>
+              <p>
+                La principal actividad para hacer en Xochimilco es pasear por los canales en trajinera, pero también hay otros lugares 
+                y actividades para descubrir. De hecho, hay dos zonas diferentes: los canales turísticos y la zona natural protegida.
+              </p>
+
+              <img src="../../assets/Imagenes_PP/Ajolote.png" alt="">
+
+        </div>
+          
+        </p-dialog>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="tituloexp">Explora nuestro catálogo</h2>
+
+  <div class="exploradorc">
+    <button class="buttonexp" [routerLink]="['opc-lugares']">
+      <svg
+        class="svgIcon"
+        viewBox="0 0 512 512"
+        height="1em"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm50.7-186.9L162.4 380.6c-19.4 7.5-38.5-11.6-31-31l55.5-144.3c3.3-8.5 9.9-15.1 18.4-18.4l144.3-55.5c19.4-7.5 38.5 11.6 31 31L325.1 306.7c-3.2 8.5-9.9 15.1-18.4 18.4zM288 256a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"
+        ></path>
+      </svg>
+      Ir ahora
+    </button>
+  </div>
+
+  <div class="slider-box">
+    <ul>
+      <li>
+        <img src="../../assets/Imagenes_PP/1.jpg" alt="" />
+        <div class="texto22">
+          <h2>
+            "Explora el mundo desde la comodidad de tu propio hogar temporal."
+          </h2>
+        </div>
+      </li>
+
+      <li>
+        <img src="../../assets/Imagenes_PP/2.jpg" alt="" />
+        <div class="texto22">
+          <h2>"Descubre la verdadera hospitalidad en cada reserva."</h2>
+        </div>
+      </li>
+
+      <li>
+        <img src="../../assets/Imagenes_PP/3.jpg" alt="" />
+        <div class="texto22">
+          <h2>"Donde sea que vayas, encuentra un hogar lejos de casa."</h2>
+        </div>
+      </li>
+
+      <li>
+        <img src="../../assets/Imagenes_PP/4.jpg" alt="" />
+        <div class="texto22">
+          <h2>"Descubre la belleza del mundo, una reserva a la vez."</h2>
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>

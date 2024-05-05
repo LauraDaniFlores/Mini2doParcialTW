@@ -216,3 +216,8 @@ input{
 input::placeholder{
     color: #FFF;
 }
+.imgMore{
+    min-height: 150px;
+    max-height: 180px;
+    object-fit: cover;
+}
