@@ -2,9 +2,10 @@ import { Time } from "@angular/common";
 import { EmailValidator } from "@angular/forms";
 
 export interface Reservacion{
+    [x: string]: any;
     fechaI: Date;
     fechaF: Date;
-    hora: string; 
+    hora: Date; 
     dias: number;
     nombre:string;
     telefono: string;

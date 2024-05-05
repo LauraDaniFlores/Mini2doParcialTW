@@ -211,6 +211,7 @@ input{
     background-color: #18141c;
     border: none;
     border-bottom:1px solid green;
+    color: #FFF;
 }
 input::placeholder{
     color: #FFF;

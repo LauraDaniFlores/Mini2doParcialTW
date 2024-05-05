@@ -18,21 +18,21 @@
                     <i class="fa-solid fa-calendar-day fa-lg" style="color: #033d1e;"></i>
                     <p>Fecha inicial</p>
                     <div class="control">
-                        <input class="input" type="date" value="{{res.fechaF.getFullYear()}}-{{sumarMonth(res.fechaF.getMonth())}}-{{ponerCeros(res.fechaI.getDate())}}" readonly />
+                        <input class="input" type="date" value="{{res.fechaI.getFullYear()}}-{{ponerCeros(sumarMonth(res.fechaI.getMonth()))}}-{{ponerCeros(res.fechaI.getDate())}}" readonly />
                     </div>   
                 </div>
                 <div class="iconp">
                     <i class="fa-solid fa-calendar-check fa-lg" style="color: #033d1e;"></i>
                     <p>Fecha Final</p> 
                     <div class="control">
-                        <input class="input" type="date" value="{{res.fechaF.getFullYear()}}-{{sumarMonth(res.fechaF.getMonth())}}-{{ponerCeros(res.fechaF.getDate())}}" readonly />
+                        <input class="input" type="date" value="{{res.fechaF.getFullYear()}}-{{ponerCeros(sumarMonth(res.fechaF.getMonth()))}}-{{ponerCeros(res.fechaF.getDate())}}" readonly />
                     </div>      
                 </div>
                 <div class="iconp">
                     <i class="fa-solid fa-clock fa-lg" style="color: #033d1e;"></i>
                     <p>Hora</p>  
                     <div class="control">
-                        <input class="input" type="time" value={{res.hora}} readonly />
+                        <input class="input" type="time" value="{{ponerCeros(res.hora.getHours())}}:{{ponerCeros(res.hora.getMinutes())}}" readonly />
                     </div>    
                 </div>
                 <div class="iconp">
@@ -98,21 +98,21 @@
                     <i class="fa-solid fa-calendar-day fa-lg" style="color: #033d1e;"></i>
                     <p>Fecha inicial</p>
                     <div class="control">
-                        <input class="input" type="date" value="{{res.fechaI.getFullYear()}}-{{sumarMonth(res.fechaI.getMonth())}}-{{ponerCeros(res.fechaI.getDate())}}" readonly />
+                        <input class="input" type="date" value="{{res.fechaI.getFullYear()}}-{{ponerCeros(sumarMonth(res.fechaI.getMonth()))}}-{{ponerCeros(res.fechaI.getDate())}}" readonly />
                     </div>   
                 </div>
                 <div class="iconp">
                     <i class="fa-solid fa-calendar-check fa-lg" style="color: #033d1e;"></i>
                     <p>Fecha Final</p> 
                     <div class="control">
-                        <input class="input" type="date" value="{{res.fechaF.getFullYear()}}-{{sumarMonth(res.fechaF.getMonth())}}-{{ponerCeros(res.fechaF.getDate())}}" readonly />
+                        <input class="input" type="date" value="{{res.fechaF.getFullYear()}}-{{ponerCeros(sumarMonth(res.fechaF.getMonth()))}}-{{ponerCeros(res.fechaF.getDate())}}" readonly />
                     </div>      
                 </div>
                 <div class="iconp">
                     <i class="fa-solid fa-clock fa-lg" style="color: #033d1e;"></i>
                     <p>Hora</p>  
                     <div class="control">
-                        <input class="input" type="time" value={{res.hora}} readonly />
+                        <input class="input" type="time" value="{{ponerCeros(res.hora.getHours())}}:{{ponerCeros(res.hora.getMinutes())}}" readonly />
                     </div>    
                 </div>
                 <div class="iconp">
@@ -128,7 +128,7 @@
                     <i class="fa-solid fa-user fa-lg" style="color: #033d1e;"></i>
                     <p>Nombre</p> 
                     <div class="control">
-                        <input class="input" type="text" value={{res.nombre}} readonly />
+                        <input class="input" type="text" value="{{res.nombre}}" readonly />
                     </div>   
                 </div>
                 <div class="iconp">

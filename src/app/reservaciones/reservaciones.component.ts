@@ -25,9 +25,6 @@ export class ReservacionesComponent {
   ngOnInit(){
     this.listadoCasa = this.listadoLSService.getLista(); 
     this.listadoReser = this.listadoLSService.getlistaResers(); 
-    console.log(this.listadoReser);
-    this.listadoLSService.imprimir(); 
-    console.log(this.today);
   }
 
   randomNumber(){
@@ -53,17 +50,19 @@ export class ReservacionesComponent {
       }else if(fecha.getMonth() > this.today.getMonth()){
         return false; 
       }else if(fecha.getMonth() == this.today.getMonth()){
-        if(fecha.getDay() < this.today.getDay()){
+        if(fecha.getDate() < this.today.getDate()){
           return true; 
-        }else if(fecha.getDay() > this.today.getDay()){
+        }else if(fecha.getDate() > this.today.getDate()){
           return false; 
-        }else if(fecha.getMonth() == this.today.getMonth()){
+        }else if(fecha.getDate() == this.today.getDate()){
           return true; 
         }
       }
     }
     return true; 
   }
+
+
 
   sumarMonth(num: number){
     return num+1; 
