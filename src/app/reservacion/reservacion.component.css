@@ -1,10 +1,15 @@
 *{
     box-sizing: border-box;
     font-family: 'Montserrat';
+    /* color: #FFF; */
 }
 
 .bodyR{
+    margin: 0px;
     background-color: #18141c;
+    padding-bottom: 30px;
+    padding-top: 10px;
+    color: #FFF;
 }
 
 .info, .formulario{
@@ -17,11 +22,12 @@
     grid-gap: 20px;
     grid-template-areas: 'nombre nombre nombre nombre'
                         'imagen imagen datos datos';
+                        
 }
 
 .infoImg img{
     width: 100%;
-    max-height: 370px;
+    max-height: 450px;
     object-fit: cover;
 }
 
@@ -147,6 +153,8 @@
 .calendario{
     width: 100%;
     margin-bottom: 20px;
+    color: black;
+
 }
 .hora{
     width: 100%;
@@ -155,6 +163,7 @@
 
 .horaPicker{
     text-align: center;
+    background-color: #18141c;
 }
 
 .date{
@@ -196,4 +205,13 @@
 }
 .correct{
     margin-bottom: 1px solid rgb(8, 79, 20);
+}
+
+input{
+    background-color: #18141c;
+    border: none;
+    border-bottom:1px solid green;
+}
+input::placeholder{
+    color: #FFF;
 }

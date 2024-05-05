@@ -52,7 +52,7 @@ export class ListadoLSService {
 
   agregarReservacion(reserv: Reservacion){
     this.listadoResers.push(reserv);
-    localStorage.setItem("reservaciones", JSON.stringify(this.listadoResers)); 
+    // localStorage.setItem("reservaciones", JSON.stringify(this.listadoResers)); 
   }
 
   nuevaReserva(): Reservacion{

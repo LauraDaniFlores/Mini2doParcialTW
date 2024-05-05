@@ -1,12 +1,14 @@
 <div class=" cards container">
-    @for (c of lugares; track c) {
+    @for (c of lugares; track c; let i = $index) {
     <div class="card">
         <div class="card-image">
           <figure class="image ">
+            <a [routerLink]="['/casa',i]">
             <img
               src="{{c.imagen[0]}}"
               alt="Placeholder image"
             />
+          </a>
           </figure>
         </div>
         <div class="card-content">
