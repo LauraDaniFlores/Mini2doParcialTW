@@ -290,6 +290,9 @@
     scale: 1.1;
     transition-duration: 1s;
 }
+.municipiosobj > div > img{
+  cursor: pointer; 
+}
 
 .municipios h1{
     color: black;
