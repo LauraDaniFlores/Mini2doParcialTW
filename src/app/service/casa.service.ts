@@ -18,5 +18,6 @@ export class CasaService {
   getUnLugar(posicion:number):Casa{
     return this.casa[posicion];
   }
+  
 }
 
