@@ -5,6 +5,7 @@
   }
 
 
+
   body{
     font-family: 'Montserrat';
     background-color: white;
@@ -12,6 +13,8 @@
     color: white;
     margin: 0%;
     padding: 0%;
+
+    overflow-x: inherit;
 
 
   }
@@ -252,6 +255,11 @@
 
 .municipios button{
   background-color: none;
+}
+
+.informe{
+  margin-left: 100px;
+
 }
 
 .informe p{
