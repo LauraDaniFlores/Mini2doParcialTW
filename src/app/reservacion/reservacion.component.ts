@@ -13,7 +13,8 @@ import { Router } from '@angular/router';
 
 import swal from'sweetalert2';
 import 'sweetalert2/dist/sweetalert2.js';
-import 'sweetalert2/src/sweetalert2.scss';
+
+// import 'sweetalert2/src/sweetalert2.scss';
 import { DisponibleComponent } from "../disponible/disponible.component";
 // import {GMapModule} from 'primeng/gmap';
 
