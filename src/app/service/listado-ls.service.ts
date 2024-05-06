@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import { Casa } from '../interface/casa';
 import { Reservacion } from '../interface/reservaciones';
 import { Lugares } from '../lugares';
+import { CasaService } from './casa.service';
+import { FormControl } from '@angular/forms';
 
 
 @Injectable({
@@ -12,6 +14,12 @@ export class ListadoLSService {
   antes:boolean = false;
   listadoResers!: Reservacion[]; 
   lista:Casa[]=Lugares; 
+
+  busqueda:Casa[] = [];
+
+  
+
+  
   
   li: Reservacion[] = [{
     fechaI:new Date(2022, 11, 22),
@@ -54,6 +62,8 @@ export class ListadoLSService {
   getLista(){
     return this.lista; 
   }
+
+  //Lista de casas disponibles
   getlistaResers(){
     return this.listadoResers; 
   }
@@ -117,6 +127,31 @@ export class ListadoLSService {
     }
     return false; 
   }
+
+
+  buscarCasas(estado: string){
+    this.busqueda = [];
+    var flag:boolean =false;
+
+  for(var i of this.lista){
+     for(var j of i.lugar){
+       if(estado == j){
+        console.log(i);
+        flag=true;
+       }
+     }
+     if(flag){
+      this.busqueda.push(i);
+      flag = false;
+     }
+    }
+    return this.busqueda;
+  }
+
+ 
+  
+
+ 
 
 
 
