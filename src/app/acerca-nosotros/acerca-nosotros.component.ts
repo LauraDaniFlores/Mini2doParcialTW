@@ -18,7 +18,7 @@ import { ComentariosComponent } from '../comentarios/comentarios.component';
 })
 export class AcercaNosotrosComponent {
   video:string="Gic_CtkJSjE";
-
+  comment:string[] = [];
 
   array:Dato[] =[]; 
 
@@ -43,8 +43,6 @@ export class AcercaNosotrosComponent {
     this.array = data.datos; 
     console.log(this.array); 
   }
-
-  comment!:string[];
 
   EscogerComentarios(comentario:string[]){
     console.log(comentario);

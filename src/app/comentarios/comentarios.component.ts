@@ -9,22 +9,21 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './comentarios.component.css'
 })
 export class ComentariosComponent {
-  comentarios: string[] = ['Excelente servicio', 'Los anfitriones siempre son muy atentos y responden nuestras preguntas', 'Muy bonitas casas', 'Las vistas son preciosas', 'Muy buen precio', 'Las casas siempre estan limpias'];
+  comentarios: string[] = ['¡Excelente servicio!', 'Los anfitriones siempre son muy atentos y responden nuestras preguntas.', 'Muy bonitas casas.', 'Las vistas son preciosas', 'Muy buen precio, son muy económicos', 'Las casas siempre estan limpias.', 'Los baños esta muy limpios.', '¡Gran estadía!', 'Mi primera vez como cliente y me encantó.'];
   
   num:number[]= this.randomNumber();
   comentario: string[] = [this.comentarios[this.num[0]], this.comentarios[this.num[1]], this.comentarios[this.num[2]]];
 
   @Output() emitir = new EventEmitter<string[]>();
 
-
   onEmitir(){
     this.emitir.emit(this.comentario);
   }
 
   randomNumber(){
-    let num =[0,1,2,3,4,5];
+    let num =[0,1,2,3,4,5,6,7,8];
     num = this.shuffle(num);
-    return num.splice(3, 3);
+    return num.splice(3, 6);
   }
 
   shuffle(a:number[]) {
