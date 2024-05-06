@@ -64,9 +64,10 @@
     <div class="infoForm">
       <div class="date">
         <div class="calendario">
-          <p-calendar selectionMode="range" class="max-w-full" [inline]="true" [showWeek]="true" [readonlyInput]="true" [(ngModel)]="fecha" >
+          <p-calendar selectionMode="range" class="max-w-full" [inline]="true" [showWeek]="true" [readonlyInput]="true" [(ngModel)]="fecha" [minDate]='hoy'>
             <ng-template pTemplate="date" let-date>
-                <span [ngStyle]="{textDecoration: (date.day < 21 && date.day > 10) ? 'line-through' : 'inherit'}">{{date.day}}</span>
+                <span >{{date.day}}</span>
+                <!-- [ngStyle]="{textDecoration: (date.day < 21 && date.day > 10) ? 'line-through' : 'inherit'}" -->
             </ng-template>
           </p-calendar>
         </div>

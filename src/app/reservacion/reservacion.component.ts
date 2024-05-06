@@ -33,6 +33,7 @@ export class ReservacionComponent {
 
   alert: string='';
   confirmacion:boolean = false; 
+  hoy: Date = new Date(); 
 
   ComprobarFecha(){
     console.log(this.fecha);
