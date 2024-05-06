@@ -10,7 +10,15 @@ import { Router, RouterModule } from '@angular/router';
 })
 export class EncabezadoComponent {
   showBurgerMenu: boolean | undefined;
-    constructor() {}
+  
+  constructor(private router:Router) {}
+
+  buscarUnCasa(estado:string){
+    this.router.navigate(['/buscador', estado]);
+  }
+
+
+
 
 
 

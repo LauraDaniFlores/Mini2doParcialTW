@@ -18,6 +18,11 @@ export class CasaService {
   getUnLugar(posicion:number):Casa{
     return this.casa[posicion];
   }
+
+  searchUnCasa(estadocasa:string[]):number{
+    let index = this.casa.findIndex(p => p.lugar === estadocasa);
+    return index;
+  }
   
 }
 

@@ -73,10 +73,16 @@
 
       <div class="navbar-end">
         <div class="buscador">
-          <input type="text" placeholder="Buscador" name="buscar" />
-            <button name="search">
+
+          <div id="buscocasa">
+
+            <input type="text" placeholder="Buscador" #buscarTexto (keyup.enter)="buscarUnCasa(buscarTexto.value)" />
+            <button (click)="buscarUnCasa(buscarTexto.value)" type="button">
               <p>BUSCAR</p>
             </button>
+
+          </div>
+          
           
           
         </div>
