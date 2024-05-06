@@ -113,11 +113,15 @@ tr th{
     padding: 15px;
 }
 
-tr td:first-child, tr td:nth-child(3), tr td:nth-child(4){
+tr td:first-child, tr td:nth-child(3){
+    padding-left: 10px;
+    padding-top: 60px;
+}
+
+tr td:nth-child(4){
     padding-left: 10px;
     padding-top: 15px;
 }
-
 .imgApi{
     display: flex;
     justify-content: center;
@@ -153,3 +157,4 @@ tr:nth-child(even) {
 tr:nth-child(even):hover {
     background-color: #03572a;
 }
+
