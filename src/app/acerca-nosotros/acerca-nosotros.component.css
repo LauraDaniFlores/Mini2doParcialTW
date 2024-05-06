@@ -136,6 +136,10 @@ tr td:nth-child(4){
 tr td .imgApi:first-child{
     border-top: none;
 }
+.api{
+    visibility: visible; 
+    display: block;
+}
 
 .imgApi:last-child{
     border-bottom: none;

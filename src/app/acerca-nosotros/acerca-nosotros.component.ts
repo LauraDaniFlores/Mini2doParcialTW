@@ -6,17 +6,19 @@ import { ImageModule } from 'primeng/image';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { Dato } from '../interface/datos';
+import { ComentariosComponent } from '../comentarios/comentarios.component';
 
 
 @Component({
   selector: 'app-acerca-nosotros',
   standalone: true,
-  imports: [DomseguroPipe, TableModule, ImageModule, CommonModule, RouterOutlet],
+  imports: [DomseguroPipe, TableModule, ImageModule, CommonModule, RouterOutlet, ComentariosComponent],
   templateUrl: './acerca-nosotros.component.html',
   styleUrl: './acerca-nosotros.component.css'
 })
 export class AcercaNosotrosComponent {
   video:string="Gic_CtkJSjE";
+
 
   array:Dato[] =[]; 
 
@@ -40,5 +42,12 @@ export class AcercaNosotrosComponent {
     console.log(data); 
     this.array = data.datos; 
     console.log(this.array); 
+  }
+
+  comment!:string[];
+
+  EscogerComentarios(comentario:string[]){
+    console.log(comentario);
+    this.comment = comentario;
   }
 }

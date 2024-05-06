@@ -110,4 +110,13 @@
     </ng-template>
   </p-table>
   </section>
+
+  <section class="comen">
+    <app-comentarios (emitir)="EscogerComentarios($event)"></app-comentarios>
+    <div class="columns">
+      <div class="column is-one-third">{{comment[0]}}</div>
+      <div class="column is-one-third">{{comment[1]}}</div>
+      <div class="column is-one-third">{{comment[2]}}</div>
+  </div>
+  </section>
 </main>
