@@ -9,6 +9,8 @@ import { GalleriaModule } from 'primeng/galleria';
 import { ListadoLSService } from '../service/listado-ls.service';
 import { Reservacion } from '../interface/reservaciones';
 import { Lugares } from '../lugares';
+import { Router } from '@angular/router';
+
 import swal from'sweetalert2';
 import 'sweetalert2/dist/sweetalert2.js';
 import 'sweetalert2/src/sweetalert2.scss';
@@ -49,7 +51,7 @@ export class ReservacionComponent {
   // }
   
 
-  constructor(public casaService:CasaService, public activatedRoute: ActivatedRoute, private listadoLSService: ListadoLSService){
+  constructor(public casaService:CasaService, public activatedRoute: ActivatedRoute, private listadoLSService: ListadoLSService, private router: Router){
     this.activatedRoute.params.subscribe(params => {
       this.casa = this.casaService.getUnLugar(params['id']);
     })
@@ -100,20 +102,22 @@ validatePhone(telefono:string){
       if(this.comprobarDisponibiliad(this.reservaciones.fechaI, this.arrayReseActual, true) || this.comprobarDisponibiliad(this.reservaciones.fechaF, this.arrayReseActual, false)){
         return false; 
       }
+      else if(this.listadoLSService.comprobarFecha(this.reservaciones.fechaI, new Date(), true)){
+        return false; 
+      }
     }
     return true; 
   }
+
   comprobarDisponibiliad(fecha: Date, fechas: Reservacion[], flag:boolean):boolean{
     for(var i of fechas){
       if(flag){
         console.log();
         if(!this.listadoLSService.comprobarFecha(fecha, i.fechaI, false) && this.listadoLSService.comprobarFecha(fecha, i.fechaF, true)){
-          console.log("Se entrelapan" + fecha + " > " + i.fechaI + " && " + fecha + " < " + i.fechaF); 
           return true; 
         }
       }else{
         if(this.listadoLSService.comprobarFecha(fecha, i.fechaI, true) && !this.listadoLSService.comprobarFecha(fecha, i.fechaF, false)){
-          console.log("Se entrelapan" + fecha + " < " + i.fechaI + " && " + fecha + " > " + i.fechaF); 
           return true; 
         }
       }
@@ -134,8 +138,8 @@ validatePhone(telefono:string){
     this.reservaciones.dias = this.daysbetween()+1; 
     this.reservaciones.precio = (this.casa.precio)*(this.reservaciones.dias);
     this.reservaciones.idCasa = this.casa.id; 
-
   }
+  
   validateInfo(){
     if( this.validateFecha(this.fecha)){
       if(this.validateEmail(this.reservaciones.correo) && this.validateName(this.reservaciones.nombre) && this.validatePhone(this.reservaciones.telefono)){
@@ -146,7 +150,15 @@ validatePhone(telefono:string){
   
         swal.fire({
           title: "Reservación completada",
-          icon: "success"
+          icon: "success",
+          showDenyButton: true,
+          confirmButtonText: "Serguir explorando",
+          denyButtonText: "Ok"
+        }).then((result) => {
+          /* Read more about isConfirmed, isDenied below */
+          if (result.isConfirmed) {
+            this.router.navigate((['/', 'opc-lugares']));
+          } 
         });
       }else{
         swal.fire({
