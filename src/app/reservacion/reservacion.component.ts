@@ -9,17 +9,21 @@ import { GalleriaModule } from 'primeng/galleria';
 import { ListadoLSService } from '../service/listado-ls.service';
 import { Reservacion } from '../interface/reservaciones';
 import { Lugares } from '../lugares';
+import { Router } from '@angular/router';
+
 import swal from'sweetalert2';
 import 'sweetalert2/dist/sweetalert2.js';
-import 'sweetalert2/src/sweetalert2.scss';
+
+// import 'sweetalert2/src/sweetalert2.scss';
+import { DisponibleComponent } from "../disponible/disponible.component";
 // import {GMapModule} from 'primeng/gmap';
 
 @Component({
-  selector: 'app-reservacion',
-  standalone: true,
-  imports: [CalendarModule, CommonModule, FormsModule,RouterModule, GalleriaModule],
-  templateUrl: './reservacion.component.html',
-  styleUrl: './reservacion.component.css'
+    selector: 'app-reservacion',
+    standalone: true,
+    templateUrl: './reservacion.component.html',
+    styleUrl: './reservacion.component.css',
+    imports: [CalendarModule, CommonModule, FormsModule, RouterModule, GalleriaModule, DisponibleComponent]
 })
 export class ReservacionComponent {
   fecha!: Date[];
@@ -29,6 +33,8 @@ export class ReservacionComponent {
   telefono: string="";
 
   alert: string='';
+  confirmacion:boolean = false; 
+  hoy: Date = new Date(); 
 
   ComprobarFecha(){
     console.log(this.fecha);
@@ -49,7 +55,7 @@ export class ReservacionComponent {
   // }
   
 
-  constructor(public casaService:CasaService, public activatedRoute: ActivatedRoute, private listadoLSService: ListadoLSService){
+  constructor(public casaService:CasaService, public activatedRoute: ActivatedRoute, private listadoLSService: ListadoLSService, private router: Router){
     this.activatedRoute.params.subscribe(params => {
       this.casa = this.casaService.getUnLugar(params['id']);
     })
@@ -91,33 +97,43 @@ validatePhone(telefono:string){
     if(fecha == undefined){
       return false; 
     }else{
+
+
       this.reservaciones.fechaI = new Date(this.fecha[0]); 
       this.reservaciones.fechaF = new Date(this.fecha[1]); 
 
-      this.casasActuales(this.listadoLSService.getlistaResers()); 
-      console.log(this.arrayReseActual);
 
+      if(this.reservaciones.fechaF == null){
+        // console.log("Esta vacio");
+        if(this.comprobarDisponibiliad(this.reservaciones.fechaI, this.arrayReseActual, true)){
+          return false; 
+        }
+      }
       if(this.comprobarDisponibiliad(this.reservaciones.fechaI, this.arrayReseActual, true) || this.comprobarDisponibiliad(this.reservaciones.fechaF, this.arrayReseActual, false)){
+        // console.log("Esta reservada");
+        return false; 
+      }
+      else if(this.listadoLSService.comprobarFecha(this.reservaciones.fechaI, new Date(), false)){        
+        // console.log("Es una fecha anterior");
         return false; 
       }
     }
     return true; 
   }
+
   comprobarDisponibiliad(fecha: Date, fechas: Reservacion[], flag:boolean):boolean{
     for(var i of fechas){
       if(flag){
-        console.log();
         if(!this.listadoLSService.comprobarFecha(fecha, i.fechaI, false) && this.listadoLSService.comprobarFecha(fecha, i.fechaF, true)){
-          console.log("Se entrelapan" + fecha + " > " + i.fechaI + " && " + fecha + " < " + i.fechaF); 
           return true; 
         }
       }else{
         if(this.listadoLSService.comprobarFecha(fecha, i.fechaI, true) && !this.listadoLSService.comprobarFecha(fecha, i.fechaF, false)){
-          console.log("Se entrelapan" + fecha + " < " + i.fechaI + " && " + fecha + " > " + i.fechaF); 
           return true; 
         }
       }
     }
+    console.log("No se entrelapan"); 
     return false;
   }
 
@@ -134,8 +150,8 @@ validatePhone(telefono:string){
     this.reservaciones.dias = this.daysbetween()+1; 
     this.reservaciones.precio = (this.casa.precio)*(this.reservaciones.dias);
     this.reservaciones.idCasa = this.casa.id; 
-
   }
+  
   validateInfo(){
     if( this.validateFecha(this.fecha)){
       if(this.validateEmail(this.reservaciones.correo) && this.validateName(this.reservaciones.nombre) && this.validatePhone(this.reservaciones.telefono)){
@@ -146,7 +162,15 @@ validatePhone(telefono:string){
   
         swal.fire({
           title: "Reservación completada",
-          icon: "success"
+          icon: "success",
+          showDenyButton: true,
+          confirmButtonText: "Serguir explorando",
+          denyButtonText: "Ok"
+        }).then((result) => {
+          /* Read more about isConfirmed, isDenied below */
+          if (result.isConfirmed) {
+            this.router.navigate((['/', 'opc-lugares']));
+          } 
         });
       }else{
         swal.fire({
@@ -198,6 +222,18 @@ validatePhone(telefono:string){
     this.fecha[0]= new Date();
     this.fecha[0]= new Date();
   }
+
+  confirmacionInput(){
+    this.casasActuales(this.listadoLSService.getlistaResers()); 
+    console.log(this.arrayReseActual);
+    for(var c of this.arrayReseActual){
+      if(this.listadoLSService.comprobarFecha(new Date(), c.fechaI, true) && !this.listadoLSService.comprobarFecha(new Date(), c.fechaF, false)){
+        return false; 
+      }
+    }
+    return true; 
+  }
+
 }
 
 interface imagenes{

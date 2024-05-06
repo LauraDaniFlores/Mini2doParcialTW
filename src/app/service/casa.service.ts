@@ -23,7 +23,6 @@ export class CasaService {
     let index = this.casa.findIndex(p => p.lugar === estadocasa);
     return index;
   }
-
   
 }
 

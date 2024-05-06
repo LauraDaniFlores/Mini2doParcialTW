@@ -113,11 +113,15 @@ tr th{
     padding: 15px;
 }
 
-tr td:first-child, tr td:nth-child(3), tr td:nth-child(4){
+tr td:first-child, tr td:nth-child(3){
+    padding-left: 10px;
+    padding-top: 60px;
+}
+
+tr td:nth-child(4){
     padding-left: 10px;
     padding-top: 15px;
 }
-
 .imgApi{
     display: flex;
     justify-content: center;
@@ -132,6 +136,11 @@ tr td:first-child, tr td:nth-child(3), tr td:nth-child(4){
 tr td .imgApi:first-child{
     border-top: none;
 }
+.api{
+    visibility: visible; 
+    display: block;
+    position: inherit;
+}
 
 .imgApi:last-child{
     border-bottom: none;
@@ -139,7 +148,7 @@ tr td .imgApi:first-child{
 
 tr{
     color: #FFF;
-    background-color: #282828;
+    background-color: rgb(40, 40, 40);
 }
 tr:hover{
     background-color: #363636;
@@ -152,4 +161,47 @@ tr:nth-child(even) {
 
 tr:nth-child(even):hover {
     background-color: #03572a;
+}
+
+.cardComment{
+    display: flex;
+    align-items: center;
+    height: 150px;
+    color: #000;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.imgUser{
+    width: 60px;
+}
+
+.imgUsuario{
+    width: 20%;
+    display: flex;
+    align-items: start;
+}
+
+.infoUsuario{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start
+}
+
+.infoUsuario p {
+    width: 100%;
+}
+
+.infoUsuario p:first-child{
+    font-weight: bold;
+}
+
+.columns{
+    margin: 0px;
+    padding: 0px;
+}
+
+@media only screen and (max-width: 768px){
+
 }

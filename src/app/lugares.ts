@@ -34,7 +34,7 @@ export const Lugares:Casa[]=[
         lugar: ['Guadalajara', 'Jalisco', 'México'],
         anfitrion: 'Gysell Alejandra',
         precio: 489,
-        ofrece: ['Wifi', 'Área para trabajar', 'Tv', 'Aire acondicionadao', 'Ascensor'],
+        ofrece: ['Wifi', 'Área para trabajar', 'Tv', 'Aire Acondicionadao', 'Ascensor'],
         id: 2
     },
     {
@@ -107,7 +107,7 @@ export const Lugares:Casa[]=[
         lugar: ['Colima', 'Colima', 'México'],
         anfitrion: 'Gaby',
         precio: 755,
-        ofrece: ['Cocina', 'wifi', 'Tv y Netflix', 'Refrigerador'],
+        ofrece: ['Cocina', 'Wifi', 'Tv y Netflix', 'Refrigerador'],
         id: 8
     },
     {
@@ -174,7 +174,7 @@ export const Lugares:Casa[]=[
         imagen: ['assets/imagenes/Casas/SF/SF.webp', 'assets/imagenes/Casas/SF/SF1.webp', 'assets/imagenes/Casas/SF/SF2.webp', 'assets/imagenes/Casas/SF/SF3.webp'],
         nombre: 'Habitación privada, baño y armario ',
         direccion: '1501 Howard St, CA 94103',
-        calificacion: 5,
+        calificacion: 5.0,
         descripcion:'2 huéspedes - 1 habitación - 1 cama - 1 baño',
         lugar: ['San Francisco', 'California', 'Estados Unidos'],
         anfitrion: 'Daniel',

@@ -15,9 +15,13 @@
             <div class="media-content">
                 <div class="star">
                     <p class="title is-6">{{c.lugar[0]}}, {{c.lugar[1]}}</p>
-                    <div class="estrella">                    
+                    <div class="estrella">        
+                      @if (c.calificacion == 5) {
+                        <p>5.0</p>
+                      } @else {
                         <p>{{c.calificacion}}</p>
-                        <i class="fa-solid fa-star fa-sm" style="color: #000000;"></i>
+                      }   
+                      <i class="fa-solid fa-star fa-sm" style="color: #000000;"></i>
                     </div>
                 </div>
               <p class="subtitle anfitrion"><span class="negritas">Anfitrión:</span> {{c.anfitrion}}</p>
@@ -29,5 +33,5 @@
           </div>
         </div>
       </div>
-    }  
+  }  
 </div>

@@ -1,0 +1,14 @@
+button{
+    height: 50px;
+    border: 1px solid #000;
+    width: 400px;
+    margin: auto;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #000;
+}
+
+div{
+    width: 400px;
+    margin: 40px auto;
+}
