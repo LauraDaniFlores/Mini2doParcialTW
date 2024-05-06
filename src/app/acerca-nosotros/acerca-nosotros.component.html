@@ -110,4 +110,20 @@
     </ng-template>
   </p-table>
   </section>
+  <section class="comentarios">
+    <app-comentarios (emitir)="EscogerComentarios($event)"></app-comentarios>
+    <div class="columns">
+      @for (item of comment; track item) {
+        <div class="column is-one-third cardComment">
+          <div class="imgUsuario">
+            <img src="assets/user.png" alt="usuario" class="imgUser">
+          </div>
+          <div class="infoUsuario">
+            <p>Anónimo</p>
+            <p>{{item}}</p>
+          </div>
+        </div>
+      }
+  </div>
+  </section>
 </main>
