@@ -13,14 +13,18 @@
         <h1 class="is-size-4 direccion">{{casa.direccion}}</h1>
         <h1 class="is-size-5 desc">${{casa.descripcion}}</h1>
         <h1 class="is-size-5 precio"><span class="negritas">Precio:</span> ${{casa.precio}} MX</h1>
-        <div class="estrella">                    
-          <h1 class="is-size-5 calf">{{casa.calificacion}}</h1>
+        <div class="estrella">  
+          @if (casa.calificacion == 5) {
+            <h1 class="is-size-5 calf">5.0</h1>
+          } @else {
+            <h1 class="is-size-5 calf">{{casa.calificacion}}</h1>
+          }                   
           <i class="fa-solid fa-star fa-2xl" style="color: #000000;"></i>
         </div>
         <div class="estrella anfi">
           <i class="fa-solid fa-circle-user fa-2xl iconA" style="color: #033d1e;"></i>
           <div class="anfiInfo">
-            <h1 class="is-size-6 anfitrion"><span class="negritas">Anfitrion:</span> {{casa.anfitrion}}</h1>
+            <h1 class="is-size-6 anfitrion"><span class="negritas">Anfitrión:</span> {{casa.anfitrion}}</h1>
             <h1 class="is-size-6">Superanfitrión, obviamente</h1>
           </div>
         </div>
@@ -31,7 +35,7 @@
         <h1 class="is-size-5">Servicios que ofrece</h1> <br>
         <ul>
           @for (i of casa.ofrece; track i) {
-            <li><i class="fa-solid fa-house-user fa-lg" style="color: black;"></i> {{i}}</li>
+            <li><i class="fa-solid fa-house-user fa-lg" style="color: white;"></i> {{i}}</li>
           }
         </ul>
       </div>
