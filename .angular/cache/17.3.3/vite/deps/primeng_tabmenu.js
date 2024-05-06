@@ -1,11 +1,4 @@
 import {
-  ActivatedRoute,
-  Router,
-  RouterLink,
-  RouterLinkActive,
-  RouterModule
-} from "./chunk-UXIRVJRV.js";
-import {
   Tooltip,
   TooltipModule
 } from "./chunk-P4H5NB5K.js";
@@ -14,11 +7,18 @@ import {
   ChevronRightIcon
 } from "./chunk-GKI2D7NN.js";
 import {
+  ActivatedRoute,
+  Router,
+  RouterLink,
+  RouterLinkActive,
+  RouterModule
+} from "./chunk-UXIRVJRV.js";
+import "./chunk-4H2GOX5C.js";
+import "./chunk-JTLU3WCK.js";
+import {
   Ripple,
   RippleModule
 } from "./chunk-QWSLWKAN.js";
-import "./chunk-4H2GOX5C.js";
-import "./chunk-JTLU3WCK.js";
 import "./chunk-NOEAJJDN.js";
 import {
   DomHandler
