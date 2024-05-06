@@ -110,7 +110,7 @@
   <div class="municipios">
     <h1>Lugares más visitados con frecuencia</h1>
 
-    <div class="municipiosobj">
+    <div [ngClass]="arrayClases">
       <div>
         <button (click)="showDialog()" label="Show">
           <img
@@ -167,7 +167,7 @@
           [maximizable]="true"
         >
 
-        <div class="informe">
+        <div [ngClass]="arrayInforme">
 
             <p>
                 El principal atractivo de la ciudad es ser el Polo Industrial de México, ya que se 
@@ -205,7 +205,7 @@
           [maximizable]="true"
         >
 
-        <div class="informe">
+        <div [ngClass]="arrayInforme">
 
             <p>
                 El atractivo principal en Cancún son sus playas majestuosas. La región está conformada de 17 
@@ -244,7 +244,7 @@
           [maximizable]="true"
         >
 
-        <div class="informe">
+        <div [ngClass]="arrayInforme">
             <p>
                 Xochimilco tiene particular importancia por la existencia de las chinampas. Tienen origen en una 
                 técnica agrícola mesoamericana que fue desarrollada y compartida por

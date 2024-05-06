@@ -40,15 +40,21 @@ header{
 
 
 
-.buscador {
-    margin-top: 18px;
-    margin-left: 80px;
+.buscador div{
+  display: flex;
+  justify-content: baseline;
+    /* margin-top: 20px;
+    margin-left: 80px; */
     /* margin-right: 20px; */
 }
 
 .buscador{
   margin-top: 20px;
   margin-right: 20px;
+}
+
+.busb{
+  margin-top: 6px;
 }
 
 .buscador button:hover{
@@ -72,7 +78,7 @@ header{
 }
 
 .buscador button{
-    height: 30px;
+    height: 32px;
     padding: 9px;
     width: 80px;
     font-weight: bold;
